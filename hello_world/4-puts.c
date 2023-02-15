@@ -1,7 +1,8 @@
 int main()
 {
-    char[] puts("Programming is like building a multilingual puzzle");
-    return 0;
+  char[] myString= "Programming is like building a multilingual puzzle";
+  puts(myString);
+  return 0;
 }
 
 
