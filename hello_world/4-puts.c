@@ -1,7 +1,8 @@
 #include <stdio.h>
-int main()
+/*this function pritns a string with puts*/
+int main(void)
 {
-  char a[] = "Programming is like building a multilingual puzzle";
+  char a[] = "\"Programming is like building a multilingual puzzle";
   puts(a);
   return 0;
 }
