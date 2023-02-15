@@ -1,12 +1,16 @@
 #include <stdio.h>
-/*this function pritns a string with puts*/
+/**
+ * main - entry point
+ *
+ * Return: 0
+ */
 int main(void)
 {
   char a[] = "\"Programming is like building a multilingual puzzle";
   
   puts(a);
   
-  return(0);
+  return (0);
 
 }
 
