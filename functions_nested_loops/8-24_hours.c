@@ -32,6 +32,7 @@ void jack_bauer(void)
 	  _putchar(':');
 	  _putchar(firstDigitMinutes + 48);
 	  _putchar(secondDigitMinutes + 48);
+	  _putchar('\n');
 	}
       secondDigitHouers++;
       if (secondDigitHouers > 9)
