@@ -15,7 +15,7 @@ void jack_bauer(void)
   int j;
   for (i = 0; i <= 23; i++)
     {
-      for (j = 0; j <= 59; j++)
+      for (j = 0; j < 59; j++)
 	{
 	  secondDigitMinutes++;
 	  if (secondDigitMinutes > 9)
