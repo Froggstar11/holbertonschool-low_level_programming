@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - check the code.
+ * _abs - check the code.
  * @n: an int.
  * Return: absoulte number of n.
  */
