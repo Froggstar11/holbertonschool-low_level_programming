@@ -7,10 +7,10 @@
  */
 void jack_bauer(void)
 {
-  int firstDigitHouers;
-  int secondDigitHouers;
-  int firstDigitMinutes;
-  int secondDigitMinutes;
+  int firstDigitHouers = 0;
+  int secondDigitHouers = 0;
+  int firstDigitMinutes = 0;
+  int secondDigitMinutes = 0;
   int i;
   int j;
   for (i = 0; i <= 23; i++)
