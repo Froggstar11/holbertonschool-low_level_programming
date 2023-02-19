@@ -33,7 +33,10 @@ void times_table(void)
 	    }
 	  for (z = 0; z <= 1; z++)
 	      _putchar(array[z]);
+	  if(j != 0 && j != 9){
+	  _putchar(32);
 	  _putchar(44);
+	}
 	}
       _putchar('\n');
     }
