@@ -44,7 +44,7 @@ void times_table(void)
 	    }
 	  if(j == 0)
 	    {
-	      _putchar(array[1];
+	      _putchar(array[1]);
 	    }
 	}
       _putchar('\n');
