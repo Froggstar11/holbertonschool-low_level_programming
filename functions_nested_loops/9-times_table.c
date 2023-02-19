@@ -32,7 +32,7 @@ void times_table(void)
 	      array[1] = secondDigit + 48;
 	    }
 
-	  if(j >= 1 &&)
+	  if(j >= 1)
 	    {
 	      _putchar(44);
 	      _putchar(32);
