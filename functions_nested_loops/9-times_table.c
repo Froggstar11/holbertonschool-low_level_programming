@@ -27,7 +27,7 @@ void times_table(void)
 	  if (currentNumber > 9)
 	    {
 	      secondDigit = (currentNumber % 10);
-	      firstDigit = (CurrentNumber / 10);
+	      firstDigit = (currentNumber / 10);
 	      array[0] = firstDigit + 48;
 	      array[1] = secondDigit + 48;
 	    }
