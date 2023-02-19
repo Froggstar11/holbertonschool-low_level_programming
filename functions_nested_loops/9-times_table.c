@@ -33,11 +33,9 @@ void times_table(void)
 	    }
 	 
 	
-	  for (z = 0; z <= 1; z++){
-	    _putchar(44);
-	    _putchar(32);
-	    _putchar(array[z]);
-	  }
+	  for (z = 0; z <= 1; z++)
+     	    _putchar(array[z]);
+	
 	}
       _putchar('\n');
     }
