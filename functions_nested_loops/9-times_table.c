@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * times_table - check the code
  *
@@ -7,13 +6,7 @@
  */
 void times_table(void)
 {
-int i;
-int j;
-int z;
-int currentNumber;
-int firstDigit;
-int secondDigit;
-int array[2];
+int i, j, z, currentNumber, FirstDigit, secondDigit, array[2];
 for (i = 0; i <= 9; i++)
 {
 for (j = 0; j <= 9; j++)
@@ -41,7 +34,7 @@ if (j > 0)
 for (z = 0; z <= 1; z++)
 _putchar(array[z]);
 }
-if(j == 0)
+if (j == 0)
 {
 _putchar(array[1]);
 }
