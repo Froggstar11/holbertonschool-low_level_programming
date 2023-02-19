@@ -37,10 +37,15 @@ void times_table(void)
 	      _putchar(44);
 	      _putchar(32);
 	    }
-	
+	  if(j > 0)
+	    {
 	  for (z = 0; z <= 1; z++)
      	    _putchar(array[z]);
-	
+	    }
+	  if(j == 0)
+	    {
+	      _putchar(array[1];
+	    }
 	}
       _putchar('\n');
     }
