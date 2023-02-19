@@ -31,12 +31,12 @@ void times_table(void)
 	      array[0] = firstDigit + 48;
 	      array[1] = secondDigit + 48;
 	    }
-	  for (z = 0; z <= 1; z++)
-	      _putchar(array[z]);
 	  if(j != 0 && j != 9){
 	  _putchar(32);
 	  _putchar(44);
 	}
+	  for (z = 0; z <= 1; z++)
+	    _putchar(array[z]);
 	}
       _putchar('\n');
     }
