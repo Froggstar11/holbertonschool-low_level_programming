@@ -24,6 +24,6 @@ else if (i < 9)
 _putchar(i + 48);
 }
 }
-}
 _putchar('\n');
+}
 }
