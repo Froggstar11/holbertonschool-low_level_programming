@@ -1,4 +1,5 @@
-school : 0-Makefile
+·school : 0-Makefile
+	echo 0-Makefile
 
 .PHONY : all
 all : executable
