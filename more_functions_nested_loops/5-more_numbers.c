@@ -6,8 +6,10 @@
  */
 void more_numbers(void)
 {
-int i, j;
+int i, j, k;
 int array[2];
+for (k = 0; k <= 10; k++)
+{   
 for (i = 0; i <= 14; i++)
 {
 if (i > 9)
@@ -20,6 +22,7 @@ _putchar(array[j]);
 else if (i < 9)
 {
 _putchar(i + 48);
+}
 }
 }
 _putchar('\n');
