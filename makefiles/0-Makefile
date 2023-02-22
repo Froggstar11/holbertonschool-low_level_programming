@@ -1,5 +1,4 @@
 school : 0-Makefile
-	gcc -c 0-MakeFile
 
 .PHONY : all
 all : executable
