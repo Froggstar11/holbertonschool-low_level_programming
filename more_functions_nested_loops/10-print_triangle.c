@@ -19,9 +19,9 @@ void print_triangle(int size)
 	  for (j = 0; j < size; j++)
 	    {
 	      if (count != count2)
-		_putchar(32);
-	      else
 		_putchar('#');
+	      else
+		_putchar(32);
 	      count++;
 	    }
 	  count2--;
