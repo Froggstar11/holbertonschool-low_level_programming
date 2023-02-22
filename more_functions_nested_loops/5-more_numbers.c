@@ -19,7 +19,7 @@ array[1] = (i % 10) + 48;
 for (j = 0; j <= 1; j++)
 _putchar(array[j]);
 }
-else if (i < 9)
+else if (i <= 9)
 {
 _putchar(i + 48);
 }
