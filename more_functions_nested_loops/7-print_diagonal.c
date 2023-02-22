@@ -18,7 +18,7 @@ for (j = 0; j < count; j++)
 _putchar(32);
 _putchar(92);
 _putchar('\n');
-count++; 
+count++;
 }
 }
 }
