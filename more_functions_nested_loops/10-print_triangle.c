@@ -8,7 +8,8 @@
 void print_triangle(int size)
 {
   int i, j;
-  int count = size - 1;
+  int count = 0;
+  int count2 = size - 1;
   if(size <= 0)
     _putchar('\n');
   else
@@ -17,12 +18,13 @@ void print_triangle(int size)
 	{
 	  for (j = 0; j < size; j++)
 	    {
-	      if (count != 0)
+	      if (count != count2)
 		_putchar(32);
 	      else
 		_putchar('#');
-	      count--;
+	      count++;
 	    }
+	  count2--;
 	  _putchar('\n');
 	}
     }
