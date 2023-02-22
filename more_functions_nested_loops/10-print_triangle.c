@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_triangle - check the code.
  * @size: an int.
@@ -15,7 +14,7 @@ void print_triangle(int size)
     {
       for (i = 0; i < size; i++)
 	{
-	  for (j = 0; j <= size; j++)
+	  for (j = 0; j < size; j++)
 	    {
 	      if ( j >= count)
 		_putchar('#');
