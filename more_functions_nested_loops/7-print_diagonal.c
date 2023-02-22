@@ -4,13 +4,13 @@
  * @n: an int.
  * Return: void.
  */
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
 int i, j;
 int count = 0;
 if (n <= 0)
 _putchar('\n');
-else if (n > 0)
+else
 {
 for (i = 0; i < n; i++)
 {
