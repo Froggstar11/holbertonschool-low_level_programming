@@ -21,8 +21,8 @@ void print_triangle(int size)
 		_putchar('#');
 	      else
 		_putchar(32);
-	      count--;
 	    }
+	  count--;
 	  _putchar('\n');
 	}
     }
