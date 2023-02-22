@@ -1,12 +1,11 @@
-#include "main.c"
 #include "main.h"
 #include <stdio.h>
 /**
- * fizz_buzz - check the code
+ * main - check the code
  *
- * Return: void.
+ * Return: 0.
  */
-void fizz_buzz(void)
+int main(void)
 {
   int i;
   for (i = 0; i <= 100; i++)
@@ -18,4 +17,5 @@ void fizz_buzz(void)
       else if (i % 3 == 0 && i % 5 == 0)
 	printf("FizzBuzz ");
     }
+  return (0);
 }
