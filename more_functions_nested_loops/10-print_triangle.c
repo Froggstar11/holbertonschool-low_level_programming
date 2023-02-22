@@ -8,7 +8,7 @@
 void print_triangle(int size)
 {
   int i, j;
-  int count = 1 - size;
+  int count = size - 1;
   if(size <= 0)
     _putchar('\n');
   else
