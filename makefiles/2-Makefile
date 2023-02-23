@@ -4,4 +4,4 @@ NAME = school
 OBJ = *.o
 
 all:
-	$(CC) $(SRC) -o NAME
+	$(CC) $(SRC) -o school
