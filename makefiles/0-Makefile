@@ -1,5 +1,2 @@
-school : school.c
-	echo 0-Makefile
-
-.PHONY : all
-all : executable
+all :
+	gcc main.c school.c -o school
