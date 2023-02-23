@@ -1,4 +1,4 @@
-·school : 0-Makefile
+school :
 	echo 0-Makefile
 
 .PHONY : all
