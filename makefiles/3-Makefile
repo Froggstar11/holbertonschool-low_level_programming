@@ -8,13 +8,13 @@ all: $(OBJ)
 	$(CC) $(SRC) -o $(NAME)
 
 clean:
-	find . -name '*~' -delete
+	$(RM) '*~' $(NAME)
 
 oclean:
 	$(RM) *.o
 
 fclean:
-	find . -name '*~' -delete
+	$(RM) '*~' $(NAME)
 	$(RM) *.o
 
 re:
