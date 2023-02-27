@@ -10,7 +10,7 @@ void rev_string(char *s)
 {
 int i;
 int size = strlen(s);
-char newArray[strlen(s)];
+char newArray[1000];
 int count = 0;
 for (i = size - 1; i >= 0; i--)
 {
