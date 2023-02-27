@@ -1,7 +1,8 @@
 #include "main.h"
 #include <string.h>
 /**
- * puts2 - prins every other character of a string, starting with the first, followed by a new line.
+ * puts2 - prins every other character of a string,
+ * starting with the first, followed by a new line.
  * @str: a pointer of char type.
  * Return: Void.
  */
