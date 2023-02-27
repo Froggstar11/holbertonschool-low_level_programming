@@ -19,14 +19,8 @@ int _atoi(char *s)
 	    {
 	      firstPosition = s[i];
 	    }
-	  if ( change != 1)
-	    {
 	  number *= 10;
 	  number += s[i] - '0';
-	  if (s[i+1] < 48 || s[i+1] > 57)
-	    change =1;
-	    }
-	  
 	}
       else
 	{
