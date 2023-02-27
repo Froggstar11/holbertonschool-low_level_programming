@@ -12,6 +12,6 @@ int i;
 int size = strlen(s);
 for (i = size - 1; i >= 0; i--)
 {
-s[i - size] = s[i];
+s[i] = s[i-size];
 }
 }
