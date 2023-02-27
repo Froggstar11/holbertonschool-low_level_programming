@@ -13,7 +13,7 @@ int size = strlen(s);
 int count = 0;
 for (i = size - 1; i >= 0; i--)
 {
-s[count] = s[i];
+s[i] = s[count];
 count++;
 }
 }
