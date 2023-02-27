@@ -9,7 +9,7 @@
 void rev_string(char *s)
 {
 int i;
-int size = strlen(s);
+const int size = strlen(s);
 char newArray[size];
 int count = 0;
 for (i = size - 1; i >= 0; i--)
