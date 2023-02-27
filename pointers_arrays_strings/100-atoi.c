@@ -13,7 +13,7 @@ int _atoi(char *s)
   int size = strlen(s);
   for (i = 0; i < size; i++)
     {
-      if (s[i] => 48 && s[i] <= 57)
+      if (s[i] >= 48 && s[i] <= 57)
 	{
 	  if (firstPosition == -1)
 	    {
@@ -39,4 +39,5 @@ int _atoi(char *s)
     return (number);
   else if ( minus > plus)
     return (-1 * number);
+  return (0);
 }
