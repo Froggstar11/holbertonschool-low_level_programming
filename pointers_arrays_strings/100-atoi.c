@@ -17,11 +17,10 @@ int _atoi(char *s)
 	{
 	  if (firstPosition == -1)
 	    {
-	     
-	    
+	      printf("check i: %d", s[i]);
 	  number *= 10;
 	  number += s[i] - '0';
-	  if( s[i+1] < 48 && s[i+1] > 57)
+	  if(s[i+1] < 48 && s[i+1] > 57)
 	    firstPosition = 1;
 	    }
 	}
@@ -36,11 +35,11 @@ int _atoi(char *s)
 	    }
 	}
     }
-  if ( firstPosition == -1)
+  if (firstPosition == -1)
     return (0);
-  else if( plus >= minus)
+  else if (plus >= minus)
     return (number);
-  else if ( minus > plus)
+  else if (minus > plus)
     return (-1 * number);
   return (0);
 }
