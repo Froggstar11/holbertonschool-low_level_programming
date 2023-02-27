@@ -19,7 +19,7 @@ printf("%d, ", a[i]);
 else if (i == (n - 1))
 {
 printf("%d", a[i]);
-}
-}
 _putchar('\n');
+}
+}
 }
