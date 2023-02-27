@@ -18,11 +18,13 @@ int _atoi(char *s)
 	  if (firstPosition == -1)
 	    {
 	      printf("check i: %c", s[i]);
-	  number *= 10;
 	  number += s[i] - '0';
 	  if(s[i+1] < 48 && s[i+1] > 57)
 	    firstPosition = 1;
 	    }
+	  else
+	    number += 10;
+	  number += s[i] - '0';
 	}
       else
 	{
