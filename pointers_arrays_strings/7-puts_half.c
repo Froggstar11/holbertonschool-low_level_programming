@@ -11,7 +11,7 @@ int i, n;
 int size = strlen(str);
 if (size % 2 != 0)
 {
-n = (size - 2) / 2;
+n = size / 2;
 }
 else
 {
