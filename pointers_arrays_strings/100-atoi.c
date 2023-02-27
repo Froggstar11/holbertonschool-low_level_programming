@@ -8,7 +8,7 @@
  */
 int _atoi(char *s)
 {
-  int i, plus, minus, number, change;
+  int i, plus, minus, number;
   int firstPosition = -1;
   int size = strlen(s);
   for (i = 0; i < size; i++)
