@@ -9,8 +9,8 @@
 void rev_string(char *s)
 {
 int i;
-const int size = strlen(s);
-char newArray[size];
+int size = strlen(s);
+char newArray[strlen(s)];
 int count = 0;
 for (i = size - 1; i >= 0; i--)
 {
