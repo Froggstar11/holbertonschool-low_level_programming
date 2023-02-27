@@ -13,11 +13,9 @@ int _atoi(char *s)
   int size = strlen(s);
   for (i = 0; i < size; i++)
     {
-      if ((s[i] - '0') >= 0 && (s[i] - '0') <= 9)
 	{
 	  if (firstPosition == -1)
 	    {
-	  printf("check i: %d", s[i] - '0');
 	  number += s[i] - '0';
 	  if(s[i+1] < 48 && s[i+1] > 57)
 	    firstPosition = 1;
