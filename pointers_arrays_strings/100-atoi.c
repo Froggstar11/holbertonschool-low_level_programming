@@ -8,7 +8,7 @@
  */
 int _atoi(char *s)
 {
-  int i, plus, minus, number;
+  int i, plus, minus, number, change;
   int firstPosition = -1;
   int size = strlen(s);
   for (i = 0; i < size; i++)
@@ -19,8 +19,14 @@ int _atoi(char *s)
 	    {
 	      firstPosition = s[i];
 	    }
+	  if ( change != 1)
+	    {
 	  number *= 10;
 	  number += s[i] - '0';
+	  if (s[i+1] < 48 || s[i+1] > 57)
+	    change =1;
+	    }
+	  
 	}
       else
 	{
