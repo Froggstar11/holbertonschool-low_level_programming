@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * strcpy - copies a string.
  * @dest: a pointer of char type.
@@ -9,7 +8,7 @@
 char *_strcpy(char *dest, char *src)
 {
 int i;
-int size = strlen(src);
+int size = 8;
 for (i = 0; i <= size; i++)
 {
 dest[i] = src[i];
