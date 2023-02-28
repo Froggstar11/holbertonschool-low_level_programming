@@ -33,16 +33,16 @@ int convertToInt(char c)
     }
   while (s[i] > 47 && s[i] < 58)
     {
-      n *= 10;
-      n += convertToInt(s[i]);
+      number *= 10;
+      number += convertToInt(s[i]);
       i++;
     }
   if (min % 2 == 0)
     {
-      return (n);
+      return (number);
     }
   else
     {
-      return (-n);
+      return (-number);
     }
 }
