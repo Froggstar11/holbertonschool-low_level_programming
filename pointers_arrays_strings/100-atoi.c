@@ -28,7 +28,7 @@ int _atoi(char *s)
     }
   while (s[i] > 47 && s[i] < 58)
     {
-      newNumber = (((int)s[i]) - '0') 
+      newNumber = (((int)s[i]) - '0'); 
       number *= 10;
       number += newNumber;
       i++;
