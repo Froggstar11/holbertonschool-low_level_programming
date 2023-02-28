@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
-#include <convertIntToChar.c>
 /**
  * _atoi - convert a string to an integer.
  * @s: a pointer of char type.
@@ -29,7 +28,7 @@ int _atoi(char *s)
   while (s[i] > 47 && s[i] < 58)
     {
       number *= 10;
-      number += convertToInt(s[i]);
+      number += convertIntToChar(s[i]);
       i++;
     }
   if (min % 2 == 0)
