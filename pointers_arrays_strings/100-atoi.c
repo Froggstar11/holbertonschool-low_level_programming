@@ -6,40 +6,43 @@
  * @s: a pointer of char type.
  * Return: an int.
  */
+
 int _atoi(char *s)
 {
-  int i, plus, minus, number;
-  int firstPosition = -1;
-  int size = strlen(s);
+
+int convertToInt(char c)
+{
+  int converted = (int)c;
+  return (converted - '0');
+}
+  unsigned int i = 0;
+  unsigned int min = 0;
+  unsigned int number = 0;
+  unsigned int size = strlen(s);
+
   for (i = 0; i < size; i++)
     {
+      if(s[i] == '-')
 	{
-	  if (firstPosition == -1)
-	    {
-	  number += s[i] - '0';
-	  if(s[i+1] < 48 && s[i+1] > 57)
-	    firstPosition = 1;
-	    }
-	  else
-	    number += 10;
-	  number += s[i] - '0';
+	  min++;
 	}
-      else
+      if (s[i] > 47 && s[i] < 58)
 	{
-	  if ( firstPosition == -1)
-	    {
-	      if (s[i] == '+')
-		plus++;
-	      else if (s[i] == '-')
-		minus++;
-	    }
+	  break;
 	}
     }
-  if (firstPosition == -1)
-    return (0);
-  else if (plus >= minus)
-    return (number);
-  else if (minus > plus)
-    return (-1 * number);
-  return (0);
+  while (s[i] > 47 && s[i] < 58)
+    {
+      n *= 10;
+      n += convertToInt(s[i]);
+      i++;
+    }
+  if (min % 2 == 0)
+    {
+      return (n);
+    }
+  else
+    {
+      return (-n);
+    }
 }
