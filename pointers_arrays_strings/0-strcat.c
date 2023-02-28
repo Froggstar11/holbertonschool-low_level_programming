@@ -18,7 +18,7 @@ if (i == 0)
 {
 dest[destSize] = ' ';
 }
-else
+else if (i > 0)
 {
 dest[destSize] = src[i];
 }
