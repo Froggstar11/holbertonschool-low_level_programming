@@ -16,7 +16,7 @@ unsigned int number = 0;
 unsigned int size = strlen(s);
 for (i = 0; i < size; i++)
 {
-if(s[i] == '-')
+if (s[i] == '-')
 {
 min++;
 }
