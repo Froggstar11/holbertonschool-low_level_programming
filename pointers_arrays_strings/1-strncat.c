@@ -11,15 +11,21 @@
 char *_strncat(char *dest, char *src, int n)
 {
 int i;
+int number;
 int sizeSrc = strlen(src); 
 int sizeDest = strlen(dest);
-if (n <= sizeSrc)
-{   
+if (n > sizeSrc)
+{
+number = sizeSrc;
+}
+else
+{
+number = n;
+}
 for (i = 0; i < n; i++)
 {
 dest[sizeDest] = src[i];
 sizeDest++;
-}
 }
 return (dest);
 }
