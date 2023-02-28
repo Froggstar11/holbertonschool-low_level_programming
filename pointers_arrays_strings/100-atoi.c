@@ -9,6 +9,7 @@
 
 int _atoi(char *s)
 {
+  int newNumber;
   unsigned int i = 0;
   unsigned int min = 0;
   unsigned int number = 0;
@@ -27,8 +28,9 @@ int _atoi(char *s)
     }
   while (s[i] > 47 && s[i] < 58)
     {
+      newNumber = (((int)s[i]) - '0') 
       number *= 10;
-      number += convertToInt(s[i]);
+      number += newNumber;
       i++;
     }
   if (min % 2 == 0)
