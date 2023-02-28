@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
-#include <convertToInt.c>
+#include <convertIntToChar.c>
 /**
  * _atoi - convert a string to an integer.
  * @s: a pointer of char type.
