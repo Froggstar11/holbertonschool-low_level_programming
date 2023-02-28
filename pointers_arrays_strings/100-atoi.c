@@ -28,7 +28,7 @@ int _atoi(char *s)
   while (s[i] > 47 && s[i] < 58)
     {
       number *= 10;
-      number += convertIntToChar(s[i]);
+      number += convertToInt(s[i]);
       i++;
     }
   if (min % 2 == 0)
