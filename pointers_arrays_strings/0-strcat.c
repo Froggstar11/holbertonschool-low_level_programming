@@ -14,7 +14,7 @@ int size = strlen(src);
 int destSize = strlen(dest);
 for (i = 0; i <= size; i++)
 {
-if (i == 0)
+if (i <= 0)
 {
 dest[destSize] = ' ';
 }
