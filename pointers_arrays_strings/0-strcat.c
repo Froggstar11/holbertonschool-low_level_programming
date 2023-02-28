@@ -16,7 +16,7 @@ for (i = 0; i <= size; i++)
 {
 if (i == 0)
 {
-dest[destSize] = " ";
+dest[destSize] = ' ';
 }
 else
 {
