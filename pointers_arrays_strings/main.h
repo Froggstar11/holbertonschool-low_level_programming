@@ -11,3 +11,4 @@ void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
 int convertToInt(char c);
+char *_strncat(char *dest, char *src, int n);
