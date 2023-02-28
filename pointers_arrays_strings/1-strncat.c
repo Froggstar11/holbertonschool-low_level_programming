@@ -12,7 +12,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 int i;
 int number;
-int sizeSrc = strlen(src); 
+int sizeSrc = strlen(src);
 int sizeDest = strlen(dest);
 if (n > sizeSrc)
 {
@@ -29,4 +29,3 @@ sizeDest++;
 }
 return (dest);
 }
-  
