@@ -22,7 +22,7 @@ else
 {
 number = n;
 }
-for (i = 0; i < n; i++)
+for (i = 0; i < number; i++)
 {
 dest[sizeDest] = src[i];
 sizeDest++;
