@@ -6,7 +6,6 @@
  * @s: a pointer of char type.
  * Return: an int.
  */
-
 int _atoi(char *s)
 {
 int newNumber;
@@ -27,7 +26,7 @@ break;
 }
 while (s[i] > 47 && s[i] < 58)
 {
-newNumber = (((int)s[i]) - '0'); 
+newNumber = (((int)s[i]) - '0');
 number *= 10;
 number += newNumber;
 i++;
