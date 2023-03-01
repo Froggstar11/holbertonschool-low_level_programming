@@ -4,8 +4,8 @@
  * _memcpy - a function copies memory area
  * @src: a pointer of char type.
  * @dest: a pinter of char type.
- *
- * Return: Nothing.
+ * @n: an unsigned int.
+ * Return: char.
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
