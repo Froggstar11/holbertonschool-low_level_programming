@@ -18,7 +18,7 @@ char *_strchr(char *s, char c)
       if (s[i] == c)
 	{
 	newArray[j] = s[i];
-	printf("newArray: %c", newArray[j]);
+	j++;
 	     }
     }
   return (s);
