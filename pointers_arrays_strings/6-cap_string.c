@@ -11,8 +11,8 @@ char *cap_string(char *s)
 int i, j;
 int convert;
 int size = strlen(s);
- printf("size: %d", size);
 int importantArray[] = {' ', '\t', '\n', ',', ';', '.', '?', '"', '(', ')', '{', '{'};
+printf("size: %d", size);
 for (i = 0; i < size; i++)
 {
 for ( j = 0; j < 12; j++)
