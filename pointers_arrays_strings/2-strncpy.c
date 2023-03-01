@@ -14,13 +14,13 @@ char *_strncpy(char *dest, char *src, int n)
 {
 size_t i;
 size_t number = n;
-int sizeDest = strlen(dest); 
+int limit = 97; 
 int count = 0;
 for (i = 0; i < number && dest[i] != '\0'; i++)
 { 
-dest[sizeDest] = src[i];
+dest[limit] = src[i];
 count++;
- dest++; 
+ limit--; 
 }
 dest[count] = '\0'; 
 return (dest);
