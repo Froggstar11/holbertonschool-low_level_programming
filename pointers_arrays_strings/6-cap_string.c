@@ -23,7 +23,7 @@ for (i = 0; i < size; i++)
     {
       for (j = 0; j < 12; j++)
 	{
-	  if (s[i] == array[j] && s[i] >= 97 && s[i] <= 122)
+	  if (s[i] == array[j] && s[i+1] >= 97 && s[i+1] <= 122)
 	    {
 	      convert = s[i+1] - 32;
 	      s[i+1] = convert;
