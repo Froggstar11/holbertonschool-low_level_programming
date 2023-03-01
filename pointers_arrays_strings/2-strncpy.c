@@ -18,7 +18,7 @@ int sizeDest = strlen(dest);
 int count = 0;
 for (i = 0; i < number && dest[i] != '\0'; i++)
 { 
-dest[dest] = src[i];
+dest[sizeDest] = src[i];
 count++;
  dest++; 
 }
