@@ -12,7 +12,7 @@ void reverse_array(int *a, int n)
 {
 int i;
 int count = 0;
-int size = strlen(a);
+int size = sizeof(a) / 4;
 int newArray[1000];
 for (i = size - 1; i >= 0; i--)
 {
