@@ -14,15 +14,20 @@ char *_strncpy(char *dest, char *src, int n)
 {
 int i;
 int sizeDest = strlen(dest);
+int sizeSrc = strlen(src); 
 for (i = n-1; i >= 0; i++)
 {
-if( sizeDest < 98)
-{
+
 dest[sizeDest] = src[i];
 sizeDest++;
 }
- else
-   break;
+ if (n <= sizeSrc)
+   {
+     dest[sizeDest+1] = NULL;
+   }
+ else if (n > sizeSrc)
+   {
+     dest[sizeDest+1] = '\0';
 }
 return (dest);
 }
