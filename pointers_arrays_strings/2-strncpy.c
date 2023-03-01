@@ -15,6 +15,7 @@ char *_strncpy(char *dest, char *src, int n)
 int i;
 int sizeDest = strlen(dest);
 int sizeSrc = strlen(src);
+ printf("%d" sizeSrc); 
  if (sizeSrc < 98)
 {
 for (i = 0; i < n; i++)
