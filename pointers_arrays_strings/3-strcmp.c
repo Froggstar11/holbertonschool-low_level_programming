@@ -32,6 +32,8 @@ int _strcmp(char *s1, char *s2)
 	      printf("llega");
 	      compare1 = s1[i];
 	      compare2 = s2[i];
+	      printf("compare1 : %d", compare1);
+	      printf("compare2 : %d", compare2);
 	      break;
 	    }
 	}
