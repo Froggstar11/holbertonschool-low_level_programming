@@ -23,7 +23,7 @@ sizeDest++;
 }
  if (n <= sizeSrc)
    {
-     dest[sizeDest+1] = NULL;
+     dest[sizeDest+1] = "";
    }
  else if (n > sizeSrc)
    {
