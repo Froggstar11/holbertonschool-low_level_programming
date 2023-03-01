@@ -12,14 +12,16 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-size_t i;
+int i;
 int sizeDest = strlen(dest);
-size_t number = n;
- printf("number : %lu", number);
-for (i = 0; i < number; i++)
+int sizeSrc = strlen(src);
+ if (sizeSrc < 98)
+{
+for (i = 0; i < n; i++)
 {
 dest[sizeDest] = src[i];
 sizeDest++;
+}
 }
 return (dest);
 }
