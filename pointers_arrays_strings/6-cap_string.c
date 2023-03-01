@@ -13,7 +13,7 @@ int convert;
 int size = strlen(s);
 for (i = 0; i < size; i++)
 {
-  if (i = 0 && s[0] >= 97 && s[0] <= 122)
+  if ((i = 0) && (s[0] >= 97) && (s[0] <= 122))
     {
       convert = s[0] - 32;
       s[0] = convert;
@@ -21,7 +21,7 @@ for (i = 0; i < size; i++)
   if(s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == ',' || s[i] == ';' ||
      s[i] == '.' || s[i] == '?' || s[i] == '"' || s[i] == '(' || s[i] == ')' || s[i] == '{' || s[i] == '}')
     {   
-if ((s[i+1] < 65 || s[i+1] > 90)
+if (s[i+1] < 65 || s[i+1] > 90)
 {
 convert = s[i+1] - 32;
 s[i+1] = convert;
