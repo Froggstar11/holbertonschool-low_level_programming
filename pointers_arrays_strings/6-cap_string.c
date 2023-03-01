@@ -8,25 +8,28 @@
  */
 char *cap_string(char *s)
 {
-  int i;
+int i, j;
 int convert;
 int size = strlen(s);
+int array[] = { ' ', '\t', '\n', ',' , ';', '.', '?', '"', '(', ')', '{', '}' }; 
 for (i = 0; i < size; i++)
 {
-  if ((i = 0) && (s[0] >= 97) && (s[0] <= 122))
+  if (i == 0 && s[i] >= 97 && s[i] <= 122)
     {
-      convert = s[0] - 32;
-      s[0] = convert;
+      convert = s[i] - 32;
+      s[i] = convert;
     }
-  if(s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == ',' || s[i] == ';' ||
-     s[i] == '.' || s[i] == '?' || s[i] == '"' || s[i] == '(' || s[i] == ')' || s[i] == '{' || s[i] == '}')
-    {   
-if (s[i+1] < 65 || s[i+1] > 90)
-{
-convert = s[i+1] - 32;
-s[i+1] = convert;
-}
-}
+  else
+    {
+      for (j = 0; j < 12; j++)
+	{
+	  if (s[i] == array[j] && s[i] >= 97 && s[i] <= 122)
+	    {
+	      convert = s[i+1] - 32;
+	      s[i+1] = convert;
+	    }
+	}
+    }
 }
 return (s);
 }
