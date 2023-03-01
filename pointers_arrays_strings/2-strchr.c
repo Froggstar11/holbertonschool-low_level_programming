@@ -21,5 +21,6 @@ char *_strchr(char *s, char c)
 	j++;
 	     }
     }
+  strcpy(s, newArray);
   return (s);
 }
