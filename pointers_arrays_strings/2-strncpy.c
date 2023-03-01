@@ -14,7 +14,6 @@ char *_strncpy(char *dest, char *src, int n)
 {
 int i;
 int sizeDest = strlen(dest);
- printf("%d", sizeDest);
 for (i = 0; i < n; i++)
 {
 if( sizeDest < 98)
@@ -22,6 +21,8 @@ if( sizeDest < 98)
 dest[sizeDest] = src[i];
 sizeDest++;
 }
+ else
+   break;
 }
 return (dest);
 }
