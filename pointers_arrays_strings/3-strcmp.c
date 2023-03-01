@@ -25,9 +25,9 @@ int _strcmp(char *s1, char *s2)
     }
   for (i = 0; i < number; i++)
     {
-      if (s1[i] >= 97 && s1[i] <= 122 || s1[i] >= 65 && s1[i] <= 90)
+      if ((s1[i] >= 97 && s1[i] <= 122) || (s1[i] >= 65 && s1[i] <= 90))
 	{
-	  if(s2[i] >= 97 && s2[i] <= 122 || s2[i] >= 65 && s1[i] <= 90)
+	  if ((s2[i] >= 97 && s2[i] <= 122) || (s2[i] >= 65 && s1[i] <= 90))
 	    {
 	      compare1 = s1[i];
 	      compare2 = s2[i];
@@ -36,4 +36,4 @@ int _strcmp(char *s1, char *s2)
 	}
     }
   return (compare1 - compare2);
-	
+}
