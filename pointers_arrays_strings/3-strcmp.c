@@ -29,12 +29,9 @@ int _strcmp(char *s1, char *s2)
 	{
 	  if ((s2[i] >= 97 && s2[i] <= 122) || (s2[i] >= 65 && s1[i] <= 90))
 	    {
-	      printf("llega");
 	      compare1 = s1[i];
 	      compare2 = s2[i];
 	      resul = compare1 - compare2;
-	      printf("compare1 : %d", compare1);
-	      printf("compare2 : %d", compare2);
 	      if(resul != 0)
 	      break;
 	    }
