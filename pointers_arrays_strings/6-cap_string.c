@@ -11,19 +11,15 @@ char *cap_string(char *s)
 int i, j;
 int convert;
 int size = strlen(s);
-int importantArray[] = {' ', '\t', '\n', ',', ';', '.', '?', '"', '(', ')', '{', '{'};
-printf("size: %d", size);
 for (i = 0; i < size; i++)
 {
-for ( j = 0; j < 12; j++)
-{
-if (s[i] == importantArray[j])
-{
+  if(s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == ',' || s[i] == ';' ||
+     s[i] == '.' || s[i] == '?' || s[i] == '"' || s[i] == '(' || s[i] == ')' || s[i] == '{' || s[i] == '}')
+    {   
 if ((i < size - 1) && (s[i+1] < 65 || s[i+1] > 90))
 {
 convert = s[i+1] - 32;
 s[i+1] = convert;
-}
 }
 }
 }
