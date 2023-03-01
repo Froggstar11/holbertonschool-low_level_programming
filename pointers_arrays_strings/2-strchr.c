@@ -17,9 +17,9 @@ char *_strchr(char *s, char c)
     {
       if (s[i] == c)
 	exist = 1;
-      if (exist = 1)
+      if (exist == 1)
 	{
-	s[j] = s[i]
+	  s[j] = s[i];
 	  j++;
 	}
     }
