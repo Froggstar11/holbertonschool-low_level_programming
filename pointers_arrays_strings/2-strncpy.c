@@ -23,7 +23,7 @@ sizeDest++;
 }
  if (n <= sizeSrc)
    {
-     dest[sizeDest+1] = "";
+     dest[sizeDest+1] = ' ';
    }
  else if (n > sizeSrc)
    {
