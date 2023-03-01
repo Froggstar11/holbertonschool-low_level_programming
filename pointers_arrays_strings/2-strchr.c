@@ -24,6 +24,5 @@ char *_strchr(char *s, char c)
 	printf("newArray: %c", newArray[j]);
 	     }
     }
-  strcpy(s, newArray);
   return (s);
 }
