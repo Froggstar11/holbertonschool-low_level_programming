@@ -21,7 +21,7 @@ char *_strchr(char *s, char c)
       if (exist == 0)
 	{
 	newArray[j] = s[i];
-      printf("newArray: %c", newArray[j]
+	printf("newArray: %c", newArray[j]);
 	     }
     }
   strcpy(s, newArray);
