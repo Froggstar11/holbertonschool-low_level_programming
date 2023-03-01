@@ -32,7 +32,7 @@ int _strcmp(char *s1, char *s2)
 	      printf("llega");
 	      compare1 = s1[i];
 	      compare2 = s2[i];
-	      sum = s1 + s2;
+	      sum = compare1 + compare2;
 	      printf("compare1 : %d", compare1);
 	      printf("compare2 : %d", compare2);
 	      if(sum != 0)
@@ -40,5 +40,5 @@ int _strcmp(char *s1, char *s2)
 	    }
 	}
     }
-  return (compare1 - compare2);
+  return (sum);
 }
