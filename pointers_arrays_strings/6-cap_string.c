@@ -8,7 +8,7 @@
  */
 char *cap_string(char *s)
 {
-int i, j;
+  int i;
 int convert;
 int size = strlen(s);
 for (i = 0; i < size; i++)
