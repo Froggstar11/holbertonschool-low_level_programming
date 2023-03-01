@@ -19,7 +19,10 @@ char *_strchr(char *s, char c)
       if (s[i] == c)
 	exist = 0;
       if (exist == 0)
+	{
 	newArray[j] = s[i];
+      printf("newArray: %c", newArray[j]
+	     }
     }
   strcpy(s, newArray);
   return (s);
