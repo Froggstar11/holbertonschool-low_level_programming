@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
+#include <stddef.h>
+#include <stdint.h>
 /**
  * _strncpy - check the code
  * @dest: a pointer of char type.
@@ -13,10 +15,8 @@ char *_strncpy(char *dest, char *src, int n)
 int i;
 int sizeDest = strlen(dest);
 int sizeSrc = strlen(src);
-size_t number = sizeof n;  
-if (n > sizeSrc)
-n = number;	
-for (i = 0; i < n; i++)
+size_t number = sizeof n;  	
+for (i = 0; i < number; i++)
 {
 dest[sizeDest] = src[i];
 sizeDest++;
