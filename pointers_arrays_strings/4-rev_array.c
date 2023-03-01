@@ -19,5 +19,8 @@ for (i = size - 1; i >= 0; i--)
 newArray[count] = a[i];
 count++;
 }
-strcpy(a, newArray);
+for (i = 0; i < size; i++)
+{
+a[i] = newArray[i];
+}
 }
