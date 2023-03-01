@@ -14,20 +14,14 @@ char *_strncpy(char *dest, char *src, int n)
 {
 int i;
 int sizeDest = strlen(dest);
-int sizeSrc = strlen(src); 
-for (i = n-1; i >= 0; i++)
+int sizeSrc = strlen(src);
+ if ( n <= sizeDest)
+{   
+for (i = 0; i >= 0; i++)
 {
-
 dest[sizeDest] = src[i];
-sizeDest++;
+sizeDest--;
 }
- if (n <= sizeSrc)
-   {
-     dest[sizeDest+1] = ' ';
-   }
- else if (n > sizeSrc)
-   {
-     dest[sizeDest+1] = '\0';
-}
+} 
 return (dest);
 }
