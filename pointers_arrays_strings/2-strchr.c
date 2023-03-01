@@ -11,14 +11,11 @@ char *_strchr(char *s, char c)
 {
   int i;
   int j = 0;
-  int exist = -1;
   char newArray[1000];
   int size = strlen(s);
   for (i = 0; i < size; i++)
     {
       if (s[i] == c)
-	exist = 0;
-      if (exist == 0)
 	{
 	newArray[j] = s[i];
 	printf("newArray: %c", newArray[j]);
