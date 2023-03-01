@@ -11,7 +11,7 @@ char *string_toupper(char *s)
 int i;
 int convert;
 int size = strlen(s);
-for ( i = 0; i < size; i++)
+for (i = 0; i < size; i++)
 {
 if (s[i] >= 97 && s[i] <= 122)
 {
