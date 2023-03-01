@@ -11,17 +11,16 @@ char *_strchr(char *s, char c)
 {
   int i;
   int j = 0;
-  int exist = 0;
+  int exist = -1;
+  char newArray[1000];
   int size = strlen(s);
   for (i = 0; i < size; i++)
     {
       if (s[i] == c)
-	exist = 1;
-      if (exist == 1)
-	{
-	  s[j] = s[i];
-	  j++;
-	}
+	exist = 0;
+      if (exist == 0)
+	newArray[j] = s[i];
     }
+  strcpy(s, newArray);
   return (s);
 }
