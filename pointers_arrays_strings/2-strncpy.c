@@ -16,7 +16,7 @@ int i;
 int sizeDest = strlen(dest);
 int sizeSrc = strlen(src);
  printf("%d", sizeSrc); 
- if (sizeSrc < 98)
+ if (sizeDest < 98)
 {
 for (i = 0; i < n; i++)
 {
