@@ -18,14 +18,10 @@ for ( j = 0; j < 12; j++)
 {
 if (s[i] == importantArray[j])
 {
-if ( i < size - 1)
+if ( i < size - 1 && s[i+1] < 65 || s[i+1] > 90)
 {
 convert = s[i+1] - 32;
 s[i+1] = convert;
-}
-else
-{
-continue;
 }
 }
 }
