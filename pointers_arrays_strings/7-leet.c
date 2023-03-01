@@ -8,20 +8,20 @@
  */
 char *leet(char *s)
 {
-  int i;
+  int i, j;
   int size = strlen(s);
+  char array1 = { 'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+  int array2 = { 4, 4, 3, 3, 0, 0, 7, 7, 1, 1};
   for (i = 0; i < size; i++)
     {
-      if (s[i] == 'a' || s[i] == 'A')
-	s[i] = 4 + 48;
-      else if (s[i] == 'e' || s[i] == 'E')
-	s[i] = 3 + 48;
-      else if (s[i] == 'o' || s[i] == 'O')
-	s[i] = 48;
-      else if (s[i] == 't' || s[i] == 'T')
-	s[i] = 7 + 48;
-      else if (s[i] == 'l' || s[i] == 'L')
-	s[i] = 49;
+      for (j = 0; j < 10; j++)
+	{
+	  if( s[i] == array1[j])
+	    {
+	      s[i] = array2[j] + '0';
+	    }
+	}
+	
     }
   return (s);
 }
