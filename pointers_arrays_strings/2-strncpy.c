@@ -15,7 +15,7 @@ char *_strncpy(char *dest, char *src, int n)
 size_t i;
 int sizeDest = strlen(dest);
 size_t number = sizeof n;
- printf("number : %u", number);
+ printf("number : %lu", number);
 for (i = 0; i < number - 4; i++)
 {
 dest[sizeDest] = src[i];
