@@ -25,7 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 		    }
 	}
       if (position >= 1)
-	newPosition++
+	newPosition++;
 	  position = 0;  
       
     }
