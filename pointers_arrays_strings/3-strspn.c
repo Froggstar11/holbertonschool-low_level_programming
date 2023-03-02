@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
   int i, j;
   unsigned int count = 0;
   int sizeS = strlen(s);
-  int sizeAccept = strlen(Accept);
+  int sizeAccept = strlen(accept);
   for (i = 0; i < sizeS; i++)
     {
       for (j = 0; j < sizeAccept; j++)
