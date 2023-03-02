@@ -12,7 +12,8 @@ unsigned int _strspn(char *s, char *accept)
   int i, j, z, x, d;
   unsigned int count = 0;
   int sizeS = strlen(s);
-  int aparition[100];
+  char aparition[100];
+  int aparition2[100];
   int sizeAccept = strlen(accept);
   for (z = 0; z < 100; z++)
     {
@@ -30,8 +31,11 @@ unsigned int _strspn(char *s, char *accept)
 	    {
 	      for ( d = 0; d < 100; d++)
 		{
-		  if (s[i] != aparition[d])
+		  if (s[i] == aparition[d] && aparition2[d] != 1)
+		    {
+		    aparition2[d];
 		    count++;
+		    }
 		}
 	    }
 	}
