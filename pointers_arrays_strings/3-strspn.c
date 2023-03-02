@@ -25,6 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 		    count2++;
 		    }
 	}
+      count2 = 0;
 	
     }
   return (count);
