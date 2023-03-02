@@ -12,7 +12,7 @@ char *_strchr(char *s, char c)
 int i;
 int size = strlen(s);
 char *position;
-for (i = 0; i < size && s[i] != '\0'; i++)
+for (i = 0; i <= size; i++)
 {
 if (s[i] == c)
 {
