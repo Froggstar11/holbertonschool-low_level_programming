@@ -19,12 +19,13 @@ unsigned int _strspn(char *s, char *accept)
       for (j = 0; j < sizeAccept; j++)
 	{
 	      
-		  if (s[i] == accept[j] && count2 == 0)
+		  if (s[i] == accept[j])
 		    {
-		    count++;
 		    count2++;
 		    }
-		  printf("numero: %c, aparece: %d", s[i], count2);
+		  if (count2 == 1)
+		    count++;
+		  
 	}
       count2 = 0;
 	
