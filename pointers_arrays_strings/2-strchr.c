@@ -10,17 +10,14 @@
 char *_strchr(char *s, char c)
 {
   int i;
-  int j = 0;
-  char newArray[1000];
+  char **p = NULL;
   int size = strlen(s);
   for (i = 0; i < size; i++)
     {
       if (s[i] == c)
 	{
-	newArray[j] = s[i];
-	j++;
-	     }
+	p = s[i];
+	}
     }
-  strcpy(s, newArray);
   return (s);
 }
