@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
     {
       for (x = 0; x < sizeS; x++)
 	{
-	  if ( aparition[z] != s[x]);
+	  if ( aparition[z] != s[x])
 	  aparition[z] = s[x];
 	}
     }
