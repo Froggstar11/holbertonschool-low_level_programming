@@ -10,8 +10,8 @@
 unsigned int _strspn(char *s, char *accept)
 {
   unsigned int i, j;
-  int sizeS = strlen(s);
-  int sizeAccept = strlen(accept);
+  unsigned int sizeS = strlen(s);
+  unsigned int sizeAccept = strlen(accept);
   for (i = 0; i < sizeS; i++)
     {
       for (j = 0; j < sizeAccept; j++)
