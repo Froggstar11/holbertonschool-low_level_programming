@@ -23,6 +23,7 @@ unsigned int _strspn(char *s, char *accept)
 		  if (s[d] == accept[j])
 		    count2++;
 		}
+	      printf("count: %d", count2);
 		  if (s[i] == accept[j] && count2 == 1)
 		    {
 		    count++;
