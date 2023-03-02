@@ -11,6 +11,7 @@ char *_strchr(char *s, char c)
 {
   int i;
   int size = strlen(s);
+  char *position;
   for (i = 0; i < size; i++)
     {
       if (s[i] == c)
@@ -18,6 +19,6 @@ char *_strchr(char *s, char c)
 	  break;
 	}
     }
-  $s = &s[i];
-  return (s);
+  position = &s[i];
+  return (*position);
 }
