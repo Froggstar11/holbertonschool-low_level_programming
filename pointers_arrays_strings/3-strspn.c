@@ -33,7 +33,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 		  if (s[i] == aparition[d] && aparition2[d] != 1)
 		    {
-		    aparition2[d];
+		    aparition2[d] = 1;
 		    count++;
 		    }
 		}
