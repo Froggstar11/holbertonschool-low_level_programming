@@ -23,15 +23,11 @@ unsigned int _strspn(char *s, char *accept)
 		    {
 		      for (z = 0; z < sizeAccept; z++)
 			{
-			  if (s[i+1] == accept[z])
-		              position = 1;
+			  if (s[i+1] != accept[z])
+			    return (i);
 			}
 		    }
-	}
-      if (position >= 1)
-	newPosition++;
-	  position = 0;  
-      
+	}  
     }
   return (newPosition);
 }
