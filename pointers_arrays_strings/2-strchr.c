@@ -9,16 +9,19 @@
  */
 char *_strchr(char *s, char c)
 {
-  int i;
-  int size = strlen(s);
-  char *position;
-  for (i = 0; i < size; i++)
-    {
-      if (s[i] == c)
-	{
-	  break;
-	}
-    }
-  position = &s[i];
-  return (position);
+int i;
+int size = strlen(s);
+char *position;
+for (i = 0; i < size; i++)
+{
+if (s[i] == c)
+{
+position = &s[i];
+break;
+}
+else
+{
+position = NULL;
+}
+return (position);
 }
