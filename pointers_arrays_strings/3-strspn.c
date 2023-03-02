@@ -13,12 +13,12 @@ unsigned int _strspn(char *s, char *accept)
   unsigned int position = 0;
   unsigned int sizeS = strlen(s);
   unsigned int sizeAccept = strlen(accept);
-  for (i = 0; i < sizeS; i++)
+  for (i = 0; i < sizeAccept; i++)
     {
-      for (j = 0; j < sizeAccept; j++)
+      for (j = 0; j < sizeS; j++)
 	{
 	      
-		  if (accept[j] == s[i])
+		  if (accept[i] == s[j])
 		    {
 		    position = i;
 		    break;
