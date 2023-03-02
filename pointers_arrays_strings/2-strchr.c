@@ -23,5 +23,6 @@ else
 {
 position = NULL;
 }
+}
 return (position);
 }
