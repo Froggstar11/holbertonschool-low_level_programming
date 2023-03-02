@@ -24,6 +24,7 @@ unsigned int _strspn(char *s, char *accept)
 		    count++;
 		    count2++;
 		    }
+		  printf("numero: %c, aparece: %d", s[i], count2);
 	}
       count2 = 0;
 	
