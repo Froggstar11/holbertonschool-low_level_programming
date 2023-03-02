@@ -24,5 +24,8 @@ else
 position = NULL;
 }
 }
+if (position != NULL) 
 return (position);
+else
+return (&position);   
 }
