@@ -21,7 +21,7 @@ break;
 }
 else
 {
-position = '\0';
+return (NULL);
 }
 }
 return (position);
