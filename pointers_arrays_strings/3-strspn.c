@@ -11,6 +11,7 @@ unsigned int _strspn(char *s, char *accept)
 {
   unsigned int i, j;
   unsigned int position = 0;
+  unsigned int newPosition = 0;
   unsigned int sizeS = strlen(s);
   unsigned int sizeAccept = strlen(accept);
   for (i = 0; i < sizeS; i++)
@@ -20,10 +21,11 @@ unsigned int _strspn(char *s, char *accept)
 	      
 		  if (s[i] == accept[j])
 		    {
-		    position = i;
+		    position = 1;
 		    }
 	}
+      newPosition += position;
     }
-  return (position);
+  return (newPosition);
 }
 	   
