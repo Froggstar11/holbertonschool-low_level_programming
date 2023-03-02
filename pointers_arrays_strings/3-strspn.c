@@ -23,11 +23,11 @@ unsigned int _strspn(char *s, char *accept)
 		    {
 		    position = 1;
 		    }
-	
-      
-      newPosition += position;
-      position = 0;
 	}
+      if (position >= 1)
+	newPosition++
+	  position = 0;  
+      
     }
   return (newPosition);
 }
