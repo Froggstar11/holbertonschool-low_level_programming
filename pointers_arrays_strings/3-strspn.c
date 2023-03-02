@@ -19,13 +19,15 @@ unsigned int _strspn(char *s, char *accept)
       for (j = 0; j < sizeAccept; j++)
 	{
 	      
-		  if (s[i] == accept[j])
+		  if (s[i] == accept[j] && s[i+1] && accept[j])
 		    {
 		    position = 1;
 		    }
-	}
+	
+      
       newPosition += position;
       position = 0;
+	}
     }
   return (newPosition);
 }
