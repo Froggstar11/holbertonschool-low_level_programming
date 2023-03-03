@@ -13,6 +13,7 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 int i;
+int sizeSrc = strlen(src);
 if (n <= sizeSrc)
 {
 for (i = 0; i < n && dest[i] != '\0'; i++)
