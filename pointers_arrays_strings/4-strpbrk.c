@@ -19,7 +19,7 @@ for (j = 0; j < sizeAccept; j++)
 {
 if (s[i] == accept[j])
 {
-p = &accept[j];
+p = &s[i];
 break;
 }
 }
