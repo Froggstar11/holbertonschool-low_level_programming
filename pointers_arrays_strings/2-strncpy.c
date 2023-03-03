@@ -16,7 +16,7 @@ size_t i;
 size_t number = n;
 for (i = 0; i < number && dest[i] != '\0'; i++)
 { 
-dest[i] = src[number];
+dest[i] = src[number-1];
 number--; 
 }
 for (; i < number; i++)
