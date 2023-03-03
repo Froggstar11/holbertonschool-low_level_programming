@@ -17,8 +17,8 @@ int sizeSrc = strlen(src);
 if (n <= sizeSrc)
 {
 for (i = 0; i < n && dest[i] != '\0'; i++)
-{ 
-dest[i] = src[i]; 
+{
+dest[i] = src[i];
 }
 for (; i < n; i++)
 {
@@ -27,7 +27,7 @@ dest[i] = '\0';
 }
 else
 {
-return (src);  
+return (src);
 }
 return (dest);
 }
