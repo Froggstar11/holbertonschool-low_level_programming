@@ -32,6 +32,7 @@ char *_strstr(char *haystack, char *needle)
 	count = 0;
       if (count == sizeNeedle)
 	p = &haystack[first];
+      exist = 0;
     }
   if (first == -1)
     p = NULL;
