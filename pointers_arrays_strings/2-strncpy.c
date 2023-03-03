@@ -13,11 +13,9 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 size_t i;
-size_t number = n;
 for (i = 0; i < number && dest[i] != '\0'; i++)
 { 
-dest[i] = src[number-1];
-number--; 
+dest[i] = src[i]; 
 }
 for (; i < number; i++)
 {
