@@ -16,7 +16,7 @@ unsigned int sizeAccept = strlen(accept);
 for (i = 0; i < sizeS; i++)
 {
 for (j = 0; j < sizeAccept; j++)
-{	      
+{
 if (s[i] == accept[j])
 {
 newPosition = 1;
