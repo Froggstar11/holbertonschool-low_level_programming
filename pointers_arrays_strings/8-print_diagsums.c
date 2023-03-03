@@ -20,16 +20,16 @@ for (j = 0; j < size; j++)
 {
 if (i == condition1 && j == condition1)
 {
-sum1 += *(a+i*size+j);
+sum1 += *(a + i * size +j);
 condition1++;
 }
 if (i == count && j == condition2)
 {
-sum2 += *(a+i*size+j);
+sum2 += *( a + i * size + j);
 count++;
 condition2--;
 }
 }
 }
-printf("%d, %d", sum1, sum2);
+printf("%d, %d\n", sum1, sum2);
 }
