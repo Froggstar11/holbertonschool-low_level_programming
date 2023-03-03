@@ -15,12 +15,12 @@ char *_strstr(char *haystack, char *needle)
   int count = 0;
   int exist = 0;
   int first = -1;
-  char *p;
+  char *p = NULL;
   for (i = 0; i < sizeHaystack; i++)
     {
       for (j = 0; j < sizeNeedle; j++)
 	{
-	  if (haystack[i] == needle[j])
+	  if (haystack[i] == needle[j] && exist == 0)
 	    {
 	      if (first == -1)
 		first = i;
@@ -34,7 +34,5 @@ char *_strstr(char *haystack, char *needle)
 	p = &haystack[first];
       exist = 0;
     }
-  if (first == -1)
-    p = NULL;
   return (p);
     }
