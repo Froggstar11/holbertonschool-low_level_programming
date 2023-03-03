@@ -16,12 +16,12 @@ size_t i;
 size_t number = n;
 for (i = 0; i < number && dest[i] != '\0'; i++)
 { 
-dest[n] = src[i];
-n--; 
+dest[number] = src[number];
+number--; 
 }
 for (; i < number; i++)
 {
-dest[n] = '\0';
+dest[number] = '\0';
 }
 return (dest);
 }
