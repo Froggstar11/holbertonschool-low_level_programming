@@ -14,16 +14,19 @@ char *_strstr(char *haystack, char *needle)
   int sizeNeedle = strlen(needle);
   int count = 0;
   int exist = 0;
-  int first = -1;
   char *p = NULL;
+  if (sizeNeedle == 0)
+    {
+      return (haystack)
+	}
+  else
+    {
   for (i = 0; i < sizeHaystack; i++)
     {
       for (j = 0; j < sizeNeedle; j++)
 	{
 	  if (haystack[i] == needle[j] && exist == 0)
 	    {
-	      if (first == -1)
-		first = i;
 	      exist = 1;
 	      count++;
 	    }
@@ -31,8 +34,9 @@ char *_strstr(char *haystack, char *needle)
       if (exist != 1)
 	count = 0;
       if (count == sizeNeedle)
-	p = &haystack[first];
+	p = &haystack[i];
       exist = 0;
     }
   return (p);
     }
+}
