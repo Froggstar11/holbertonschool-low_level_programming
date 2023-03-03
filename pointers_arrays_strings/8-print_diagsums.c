@@ -20,12 +20,12 @@ for (j = 0; j < size; j++)
 {
 if (i == condition1 && j == condition1)
 {
-sum1 += *a[i][j];
+  sum1 += *( *(a + i) + j) );
 condition1++;
 }
 if (i == condition2 && j == condition2)
 {
-sum2 += *a[i][j];
+  sum2 += *( *(a + i) + j) );
 condition2--;
 }
 }
