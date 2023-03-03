@@ -21,10 +21,12 @@ for (j = 0; j < sizeAccept; j++)
 if (s[i] == accept[j] && check == 0)
 {
 p = &s[i];
- check = 1;
+check = 1;
 break;
 }
 }
 }
+if (check == 0)
+p = NULL;
 return (p);
 }
