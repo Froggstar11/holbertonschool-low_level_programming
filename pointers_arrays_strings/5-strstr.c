@@ -34,7 +34,7 @@ char *_strstr(char *haystack, char *needle)
       if (exist != 1)
 	count = 0;
       if (count == sizeNeedle)
-	p = &haystack[i - needleSize];
+	p = &haystack[i - sizeNeedle];
       exist = 0;
     }
   return (p);
