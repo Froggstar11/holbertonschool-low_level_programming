@@ -1,4 +1,5 @@
-#ifndef "my_main"
+#ifndef my_main
+#define my_main
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
