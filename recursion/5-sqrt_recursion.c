@@ -21,7 +21,7 @@ int findRoot(int i, int j, int n)
 	}
       else
 	{
-	  return findRoot(i, mid - 1, n);
+	  return findRoot(i, mid / 2, n);
 	}
     }
   return (i);
