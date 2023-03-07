@@ -32,7 +32,10 @@ int findRoot(int i, int j, int n)
 
 int _sqrt_recursion(int n)
 {
-return (findRoot(0, n, n));
+  if ( n > 0)
+  return (findRoot(0, n, n));
+  else
+    return (-1);
 }
 
 
