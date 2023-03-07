@@ -14,10 +14,10 @@
  */
 int findRoot(int i, int j, int n)
 {
-if( i <= j)
+if (i <= j)
 {
 int mid = (i + j) / 2;
-if((mid * mid == n))
+if ((mid * mid == n))
 {
 return mid;
 }
