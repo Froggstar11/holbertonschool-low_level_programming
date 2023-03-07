@@ -11,7 +11,7 @@ int findRoot(int i, int j, int n)
   if( i <= j)
     {
       int mid = (i + j) / 2;
-      if((mid + mid <= n) && ((mid + 1) * (mid + 1) > n))
+      if((mid * mid <= n) && ((mid + 1) * (mid + 1) > n))
 	{
 	  return mid;
 	}
