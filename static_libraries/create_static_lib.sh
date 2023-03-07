@@ -1,2 +1,3 @@
 #!/bin/bash
-ls 
+gcc -c *.c
+ar rcs *.o
