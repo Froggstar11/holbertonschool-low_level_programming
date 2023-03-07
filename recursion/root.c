@@ -1,4 +1,5 @@
 #include <main.h>
+#include <unistd.h>
 
 int root(int i, int j, int number)
 {
