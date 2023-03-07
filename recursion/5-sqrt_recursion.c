@@ -6,6 +6,30 @@
  * @n: an int.
  * Return: an int.
  */
+int findRoot(int i, int j, int n)
+{
+  if( i <= j)
+    {
+      int mid = (i + j) / 2;
+      if((mid + mid <= n) && ((mid + 1) * (mid + 1) > n))
+	{
+	  return mid;
+	}
+      else if (mid * mid < n)
+	{
+	  return findRoot(mid + 1, j, n);
+	}
+      else
+	{
+	  return findRoot(i, mid - 1, n);
+	}
+    }
+  return (0);
+}
+
+
+
+
 int _sqrt_recursion(int n)
 {
 return (findRoot(0, n, n));
