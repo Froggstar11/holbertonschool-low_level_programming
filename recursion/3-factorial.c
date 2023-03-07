@@ -6,7 +6,7 @@
  * @n: an int.
  * Return: an int.
  */
-int factorial(int n);
+int factorial(int n)
 {
 if (n < 0)
 {
