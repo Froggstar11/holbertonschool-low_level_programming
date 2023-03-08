@@ -16,23 +16,23 @@ return (1);
 }
 else
 {
-char firstNumberS[] = argv[1];
-char secondNumberS[] = argv[2];
-int sizeFirst = strlen(firstNumber);
-int sizeSecond = strlen(secondNumber);
+char firstNumberS[] = argv[argc - 2];
+char secondNumberS[] = argv[argc - 1];
+int sizeFirst = strlen(firstNumberS);
+int sizeSecond = strlen(secondNumberS);
 int i, j;
 int number1;
 int number2;
 int convert;
 for (i = 0; i < sizeFirst; i++)
 {
-convert = (((int)firstNumbers[i]) - '0');
+convert = (((int)firstNumberS[i]) - '0');
 number1 *= 10;
 number1 += convert;
 }
 for (j = 0; j < sizeSecond; j++)
 {
-convert = (((int)secondNumber[j]) - '0');
+convert = (((int)secondNumberS[j]) - '0');
 number2 *= 10;
 number2 += convert;
 }
