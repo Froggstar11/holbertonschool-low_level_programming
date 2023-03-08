@@ -9,7 +9,7 @@
 void whatsmyname(int argc, char *argv[])
 {
   char *p = argv[0];
-  int i = 0;
+  int i = argc - argc;
   while(p++)
     {
       _putchar(*(p + i));
