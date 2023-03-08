@@ -1,12 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * whatsmyname - prints name.
+ * main - prints name.
  * @argc: an int.
  * @argv: a pointer of int array.
- * Return: void.
+ * Return: 0.
  */
-void whatsmyname(__attribute__ ((unused)) int argc, char *argv[])
+int main(__attribute__ ((unused)) int argc, char *argv[])
 {
 printf("%s", argv[0]);
+return (0);
 }
