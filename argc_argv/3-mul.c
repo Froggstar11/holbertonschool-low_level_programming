@@ -16,8 +16,8 @@ return (1);
 }
 else
 {
-char firstNumberS[arc] = *(argv[argc - 2]);
-char secondNumberS[arc] = *(argv[argc - 1]);
+char firstNumberS[argc] = *(argv[argc - 2]);
+char secondNumberS[argc] = *(argv[argc - 1]);
 int sizeFirst = strlen(firstNumberS);
 int sizeSecond = strlen(secondNumberS);
 int i, j;
