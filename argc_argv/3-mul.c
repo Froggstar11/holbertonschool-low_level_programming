@@ -16,8 +16,10 @@ return (1);
 }
 else
 {
-char firstNumberS[argc] = *(argv[argc - 2]);
-char secondNumberS[argc] = *(argv[argc - 1]);
+char firstNumberS[100];
+char secondNumberS[100]; 
+firstNumberS[0] = *(argv[argc - 2]);
+secondNumberS[argc] = *(argv[argc - 1]);
 int sizeFirst = strlen(firstNumberS);
 int sizeSecond = strlen(secondNumberS);
 int i, j;
