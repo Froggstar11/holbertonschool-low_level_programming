@@ -1,18 +1,19 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * whatsmyname - prints name.
+ * main - prints name.
  * @arg: an int.
  * @argv: a pointer of int array.
- * Return: void.
+ * Return: 0.
  */
-void whatsmyname(int i, char *argv[])
+int main(int argc, char *argv[])
 {
   char *p = argv[0];
-  int pI = i - i;
+  int i = argc - argc;
   while(p++)
     {
-      putchar(*(p + pI));
-      pI++;
+      putchar(*(p + i));
+      i++;
     }
+  return (0);
 }
