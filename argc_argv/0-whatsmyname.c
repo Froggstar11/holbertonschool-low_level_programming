@@ -6,13 +6,13 @@
  * @argv: a pointer of int array.
  * Return: void.
  */
-void whatsmyname(char *argv[])
+void whatsmyname(int i, char *argv[])
 {
   char *p = argv[0];
-  int i = 0;
+  int pI = i - i;
   while(p++)
     {
-      putchar(*(p + i));
-      i++;
+      putchar(*(p + pI));
+      pI++;
     }
 }

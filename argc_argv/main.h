@@ -1,6 +1,5 @@
-#ifndef MAIN
-#define MAIN
-void whatsmyname(char *argv[]);
+#ifndef MAINH
+#define MAINH
+void whatsmyname(int i, char *argv[]);
 int _putchar(char c);
-void main(int argc, char *argv[]);
 #endif
