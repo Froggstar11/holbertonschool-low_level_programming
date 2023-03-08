@@ -1,0 +1,4 @@
+#ifndef MAIN
+#define MAIN
+void whatsmyname(int argc, char *argv[]);
+#endif
