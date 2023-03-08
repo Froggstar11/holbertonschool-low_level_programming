@@ -15,8 +15,8 @@ return (1);
 }
 else
 {
-int firstNumber = (int)*(argv + 1);
-int secondNumber = (int)*(argv + 2);
+int firstNumber = (int)argv[1];
+int secondNumber = (int)argv[2];
 printf("%d", firstNumber * secondNumber);
 }
 return (0);
