@@ -16,13 +16,7 @@ return (1);
 }
 else
 {
-int i;
-int j;
-int number1 = 0;
-int number2 = 0;
-int mul;
-int negative1 = 0;
-int negative2 = 0; 
+int i, j, number1, number2, negative1, negative2;
 for (i = 0; argv[1][i] != '\0'; i++)
 {
 if(argv[1][i] == 45)
@@ -33,7 +27,6 @@ else
 {
 number1 *= 10;
 number1 += argv[1][i] - 48;
-printf("numero 1: %d\n", number1);
 }
 }
 for (j = 0; argv[2][j] != '\0'; j++)
@@ -45,16 +38,14 @@ negative2 = 1;
 else
 {
 number2 *= 10;
-number2 += argv[2][j] - 48;
-printf("numero 2: %d\n", number2); 
+number2 += argv[2][j] - 48; 
 }
 }
 if (negative1 == 1)
 number1 = -number1;
 if (negative2 == 1)
 number2 = -number2;   
-mul = number1 * number2; 
-printf("%d\n", mul);
+printf("%d\n", (number1 * number2));
 }
 return (0);
 }
