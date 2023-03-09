@@ -28,7 +28,7 @@ number1 *= 10;
 number1 += convert;
 i++;
 }
-while (*arv)
+while (*argv)
 {
 convert = (((int)*argv[j]) - '0');
 number2 *= 10;
