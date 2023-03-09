@@ -17,11 +17,11 @@ return (1);
 else
 {
 
-//char *p2 = argv+2;
+
 int i = 0; 
- while ((argv+1)++)
+ while (argv+1++)
 {
-printf("%s", argv[1][i]);
+printf("%d", argv[1][i]);
 i++;
 }
 printf("%d", i);
