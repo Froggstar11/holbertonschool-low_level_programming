@@ -21,9 +21,9 @@ if (argv[i][j] >= 48 && argv[i][j] <= 57)
 number *= 10;
 number += argv[i][j] - 48;
 }
- else
+else
 {
-printf("0\n");
+printf("Error\n");
 return (1);
 }
 }
