@@ -19,7 +19,7 @@ else
 
 
 int i = 0; 
- while (argv+1++)
+ while (argv+1)
 {
 printf("%d", argv[1][i]);
 i++;
