@@ -16,26 +16,24 @@ return (1);
 }
 else
 {
-char firstNumberS[100];
-char secondNumberS[100]; 
-firstNumberS[0] = *(argv[argc - 2]);
-secondNumberS[argc] = *(argv[argc - 1]);
-int i;
-int j;
+int i = 0;
+int j = 0; 
 int number1;
 int number2;
 int convert;
-for (i = 0; i < 100; i++)
+while (**argv)
 {
-convert = (((int)firstNumberS[i]) - '0');
+convert = (((int)**argv[i]) - '0');
 number1 *= 10;
 number1 += convert;
+i++;
 }
-for (j = 0; j < 100; j++)
+while (**arv)
 {
-convert = (((int)secondNumberS[j]) - '0');
+convert = (((int)**argv[j]) - '0');
 number2 *= 10;
 number2 += convert;
+j++;
 }
 printf("%d", number1 * number2);
 }
