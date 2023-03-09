@@ -31,6 +31,5 @@ number = 0;
 }
 }
 printf("%d\n", sum);
-}
 return (0);
 }
