@@ -16,7 +16,7 @@ return (1);
 }
 else
 {
-int i, j, number1, number2, negative1, negative2;
+int i, j, number1 = 0, number2 = 0, negative1 = 0, negative2 = 0;
 for (i = 0; argv[1][i] != '\0'; i++)
 {
 if (argv[1][i] == 45)
@@ -34,13 +34,13 @@ negative2 = 1;
 else
 {
 number2 *= 10;
-number2 += argv[2][j] - 48; 
+number2 += argv[2][j] - 48;
 }
 }
 if (negative1 == 1)
 number1 = -number1;
 if (negative2 == 1)
-number2 = -number2;  
+number2 = -number2;
 printf("%d\n", number1 * number2);
 }
 return (0);
