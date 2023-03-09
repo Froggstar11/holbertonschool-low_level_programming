@@ -16,7 +16,7 @@ return (1);
 }
 else
 {
-printf("%d ", argv[1][1]);
+printf("%d ", argv[1][0]);
 }
 printf("%d ", argv[2][0]);
 return (0);
