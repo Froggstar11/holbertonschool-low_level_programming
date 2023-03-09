@@ -23,6 +23,7 @@ int number2;
 int convert;
 while (*argv)
 {
+  printf("esto: %d", *argv[i]);  
 convert = (((int)*argv[i]) - '0');
 number1 *= 10;
 number1 += convert;
@@ -30,6 +31,7 @@ i++;
 }
 while (*argv)
 {
+  
 convert = (((int)*argv[j]) - '0');
 number2 *= 10;
 number2 += convert;
