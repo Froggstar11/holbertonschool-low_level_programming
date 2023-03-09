@@ -16,16 +16,14 @@ return (1);
 }
 else
 {
-int i = 0;
-while (argv++)
+char *p1 = argv+1;
+//char *p2 = argv+2;
+int i = 0; 
+while (p2++)
 {
-printf("esto: %d", *argv[i]);  /*
-convert = (((int)*argv[i]) - '0');
-number1 *= 10;
-number1 += convert;
-			       */
-i++;
- }
+  printf("%s", argv[1][i];
+	 i++;
+}
 printf("%d", i);
 }
 return (0);
