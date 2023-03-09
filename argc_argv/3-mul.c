@@ -21,16 +21,16 @@ int j = 0;
 int number1;
 int number2;
 int convert;
-while (**argv)
+while (*argv)
 {
-convert = (((int)**argv[i]) - '0');
+convert = (((int)*argv[i]) - '0');
 number1 *= 10;
 number1 += convert;
 i++;
 }
-while (**arv)
+while (*arv)
 {
-convert = (((int)**argv[j]) - '0');
+convert = (((int)*argv[j]) - '0');
 number2 *= 10;
 number2 += convert;
 j++;
