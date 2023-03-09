@@ -41,7 +41,7 @@ if (negative1 == 1)
 number1 = -number1;
 if (negative2 == 1)
 number2 = -number2;
-number1 *= number2; 
+number1 *= number2;
 printf("%d\n", number1);
 }
 return (0);
