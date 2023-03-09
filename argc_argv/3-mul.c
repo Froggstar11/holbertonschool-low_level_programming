@@ -16,13 +16,13 @@ return (1);
 }
 else
 {
-char *p1 = argv+1;
+
 //char *p2 = argv+2;
 int i = 0; 
-while (p2++)
+ while ((argv+1)++)
 {
-  printf("%s", argv[1][i];
-	 i++;
+printf("%s", argv[1][i]);
+i++;
 }
 printf("%d", i);
 }
