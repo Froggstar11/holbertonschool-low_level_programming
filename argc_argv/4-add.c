@@ -12,8 +12,6 @@ int main(int argc, char *argv[])
 int i, j;
 int number = 0;
 int sum = 0;
-if (argc > 0)
-{
 for (i = 1; i < argc; i++)
 {
 for (j = 0; argv[i][j] != '\0'; j++)
@@ -32,11 +30,7 @@ sum += number;
 number = 0;
 }
 }
-printf("%d", sum);
-}
-else
-{
-printf("0\n");
+printf("%d\n", sum);
 }
 return (0);
 }
