@@ -17,10 +17,7 @@ return (1);
 else
 {
 int i = 0;
-int j = 0; 
-int number1;
-int number2;
-int convert;
+ int j = 0;
 while (*argv)
 {
 printf("esto: %d", *argv[i]);  /*
@@ -40,7 +37,7 @@ number2 += convert;
 j++;
 
 }
-printf("%d", number1 * number2);
+printf("%d", j + i);
 }
 return (0);
 }
