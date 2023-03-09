@@ -16,15 +16,9 @@ return (1);
 }
 else
 {
-
-
-int i = 0; 
- while (argv+1)
-{
-printf("%d", argv[1][i]);
-i++;
+printf("%d", argv[1][1]);
 }
-printf("%d", i);
+printf("%d", argv[2][0]);
 }
 return (0);
 }
