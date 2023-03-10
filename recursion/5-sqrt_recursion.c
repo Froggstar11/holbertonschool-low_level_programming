@@ -1,20 +1,14 @@
 #include "main.h"
-#include <stdio.h>
-
+#include <string.h>
 /**
- * _sqrt_recursion() - check the code
- * @n: an int.
+ * findRoot() - check code.
+ * @i: an int;
+ * @j: an int;
+ * @n: an int;
  * Return: an int.
  */
 int findRoot(int i, int j, int n)
-{
-  /**
-   * findRoot() - check code.
-   * @i: an int;
-   * @j: an int;
-   * @n: an int;
-   * Return: an int.
-   */  
+{  
 if (i <= j)
 {
 if ((i * i == n))
@@ -28,7 +22,11 @@ return (findRoot(i + 1, j, n));
 }
 return (i);
 }
-
+/**
+ * _sqrt_recursion() - check the code
+ * @n: an int.
+ * Return: an int.
+ */
 int _sqrt_recursion(int n)
 {
 if (n > 0)
