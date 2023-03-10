@@ -18,7 +18,7 @@ if (i <= j)
 {
 if ((i * i == n))
 {
-return (mid);
+return (i);
 }
 else if (i * i < n)
 {
