@@ -2,12 +2,13 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - check the code
+ * _sqrt_recursion() - check the code
  * @n: an int.
  * Return: an int.
  */
+
 /**
- * findRoot - check code.
+ * findRoot() - check code.
  * @i: an int;
  * @j: an int;
  * @n: an int;
