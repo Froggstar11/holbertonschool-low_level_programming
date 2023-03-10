@@ -16,18 +16,13 @@ int findRoot(int i, int j, int n)
 {
 if (i <= j)
 {
-int mid = (i + j) / 2;
-if ((mid * mid == n))
+if ((i * i == n))
 {
 return (mid);
 }
-else if (mid * mid < n)
+else if (i * i < n)
 {
-return (findRoot(mid + 1, j, n));
-}
-else
-{
-return (findRoot(i, mid / 2, n));
+return (findRoot(i + 1, j, n));
 }
 }
 return (i);
