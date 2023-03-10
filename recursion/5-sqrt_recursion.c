@@ -9,7 +9,7 @@
  * Return: an int.
  */
 int findRoot(int i, int j, int n)
-{  
+{
 if (i <= j)
 {
 if ((i * i == n))
