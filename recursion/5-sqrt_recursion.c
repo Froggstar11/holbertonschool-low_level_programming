@@ -6,16 +6,15 @@
  * @n: an int.
  * Return: an int.
  */
-
-/**
- * findRoot() - check code.
- * @i: an int;
- * @j: an int;
- * @n: an int;
- * Return: an int.
- */
 int findRoot(int i, int j, int n)
 {
+  /**
+   * findRoot() - check code.
+   * @i: an int;
+   * @j: an int;
+   * @n: an int;
+   * Return: an int.
+   */  
 if (i <= j)
 {
 if ((i * i == n))
