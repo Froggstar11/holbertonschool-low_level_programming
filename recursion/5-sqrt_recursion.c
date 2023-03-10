@@ -2,6 +2,7 @@
 #include <string.h>
 /**
  * findRoot() - check code.
+ * Description: ' calculates the natural square root of n'
  * @i: an int;
  * @j: an int;
  * @n: an int;
@@ -24,6 +25,7 @@ return (i);
 }
 /**
  * _sqrt_recursion() - check the code
+ * Description: 'send n to findRoot'
  * @n: an int.
  * Return: an int.
  */
