@@ -5,7 +5,8 @@
  * _sqrt_recursion - check the code
  * @n: an int.
  * Return: an int.
- *
+ */
+/**
  * findRoot - check code.
  * @i: an int;
  * @j: an int;
