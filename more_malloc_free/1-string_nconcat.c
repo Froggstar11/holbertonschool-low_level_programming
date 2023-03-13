@@ -30,7 +30,7 @@ if (p == NULL)
 return (NULL);
 for (i = 0; i < size1; i++)
 p[i] = s1[i];
-for (; i < total; i++)
+for (; i < total - 1; i++)
 {
 p[i] = s2[j];
 j += 1;
