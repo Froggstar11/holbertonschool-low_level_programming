@@ -18,19 +18,19 @@ unsigned int i;
 unsigned int j = 0;
 unsigned int total;
 char *p;
-if (n > size2)
-size2 = n;
+if (n >= size2)
+n = size2;
 if (s1 == NULL)
 size1 = 1;
 if (s2 == NULL)
 size2 = 1;
-total = size1 + size2;
+total = size1 + n;
 p = (char *)malloc(total);
 if (p == NULL)
 return (NULL);
 for (i = 0; i < size1; i++)
 p[i] = s1[i];
-for (; i < total; i++)
+for (; i <= total; i++)
 {
 p[i] = s2[j];
 j += 1;
