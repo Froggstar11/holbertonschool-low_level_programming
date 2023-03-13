@@ -33,15 +33,16 @@ total = size2;
 }
 for (i = 0; i < total; i++)
 {
+printf("i %d;", i);  
 if( i <= size1)
 {
-p[i] = s2[j];
-j++; 
+p[i] = s2[i]; 
 }
 else
 {
-printf("entra");  
-p[i] = s1[i];
+printf("entra\n");  
+p[i] = s2[j];
+j++; 
 }
 }
 return (p);
