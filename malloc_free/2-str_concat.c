@@ -11,16 +11,16 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-  if (s1 == NULL)
-    {
-      s1 = "";
-    }
-  if (s2 == NULL)
-    {
-      s2 = "";
-    }
-int size1 = strlen(s1);
-int size2 = strlen(s2);
+int size1;
+int size2;
+if (s1 == NULL)
+size1 = 0;
+else
+size1 = strlen(s1);  
+if (s2 == NULL)
+size2 = 0;
+else
+size2 = strlen(s2);  
 int total = size1 + size2;
 int i;
 int j = 0;
