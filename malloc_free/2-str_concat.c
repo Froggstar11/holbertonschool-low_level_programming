@@ -34,11 +34,11 @@ total = size2;
 for (i = 0; i < total; i++)
 {
 printf("i %d;", i);  
-if( i <= size1)
+if( i < size1)
 {
 p[i] = s1[i]; 
 }
-else
+else if( i > size1)
 {
 printf("entra\n");  
 p[i] = s2[j];
