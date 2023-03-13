@@ -38,10 +38,10 @@ if( i < size1)
 {
 p[i] = s1[i]; 
 }
-else if( i > size1)
+else
 {
 printf("entra\n");  
-p[i] = s2[j];
+p[i] = s2[0];
 j++; 
 }
 }
