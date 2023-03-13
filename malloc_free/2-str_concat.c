@@ -14,7 +14,8 @@ char *str_concat(char *s1, char *s2)
 int size1 = strlen(s1);
 int size2 = strlen(s2);
 int total = size1 + size2;
-int i, j = 0;
+int i;
+int j = 0;
 char *p = (char *)malloc(sizeof(char) * total + 1);
 if (p == NULL)
 {
@@ -36,7 +37,7 @@ if( i <= size1)
 {
 p[i] = s1[i];
 }
-else if (i > size1)
+else
 {
 p[i] = s2[j];
 j++;
