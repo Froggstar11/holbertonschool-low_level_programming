@@ -35,7 +35,8 @@ for (i = 0; i < total; i++)
 {
 if( i <= size1)
 {
-p[i] = s1[i];
+p[i] = s2[j];
+j++; 
 }
 else
 {
