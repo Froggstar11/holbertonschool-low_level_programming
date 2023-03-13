@@ -29,7 +29,7 @@ printf("total %d", total);
 p = (char *)malloc(total);
 if (p == NULL)
 return (NULL);
-for (i = 0; i < total; i++)
+for (i = 0; i < total - 1; i++)
 {
 if (i < size1)
 {
