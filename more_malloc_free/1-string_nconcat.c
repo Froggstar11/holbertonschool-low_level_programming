@@ -21,9 +21,9 @@ char *p;
 if (n >= size2)
 n = size2;
 if (s1 == NULL)
-size1 = 0;
+size1 = 1;
 if (s2 == NULL)
-size2 = 0;
+size2 = 1;
 total = size1 + n;
 p = (char *)malloc(sizeof(char) * total);
 if (p == NULL)
@@ -33,7 +33,7 @@ p[i] = s1[i];
 for (; i < n; i++)
 {
 p[i] = s2[j];
-j++;
+j += 1;
 }
      
 return (p);
