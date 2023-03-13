@@ -9,7 +9,7 @@
  *
  * Return: void.
  */
-void free_grid(int **grid,__attribute__((unused)) int height)
+void free_grid(int **grid, __attribute__((unused)) int height)
 {
 if (grid != NULL)
 {
@@ -24,6 +24,6 @@ grid = NULL;
 }
 else
 {
-printf("OK");  
+continue;
 }
 }
