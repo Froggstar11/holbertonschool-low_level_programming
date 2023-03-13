@@ -23,7 +23,7 @@ if (p != NULL)
 {
 for (i = 0; i < width; i++)
 {
-*(p + i) = (int *)malloc(sizeof(int) * height);
+*(p + i) = (int *)malloc(sizeof(int) * width);
 }
 for (i = 0; i < height; i++)
 {
