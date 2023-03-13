@@ -36,7 +36,7 @@ if (i < size1)
 {
 p[i] = s1[i];
 }
-else if (i >= size1)
+else if (i > size1)
 {
 p[i] = s2[j];
  printf("entra hay:%c %c %d\n",p[i], s2[j], j); 
