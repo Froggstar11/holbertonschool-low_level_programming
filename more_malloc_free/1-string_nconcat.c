@@ -10,7 +10,7 @@
  * @n: an unisgned int.
  * Return: a pointer of char type.
  */
-char *string_nconcat(char *s1, char s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 unsigned int size1 = strlen(s1);
 unsigned int size2 = strlen(s2);
