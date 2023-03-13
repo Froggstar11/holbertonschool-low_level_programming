@@ -28,13 +28,15 @@ total = size1 + n;
 p = (char *)malloc(total);
 if (p == NULL)
 return (NULL);
-for (i = 0; i < size1; i++)
-p[i] = s1[i];
-for (; i < total; i++)
+for (i = 0; i < total; i++)
 {
-p[i] = s2[j];
+if (i < size1)
+p[i] = s1[i];
+else
+{
+p[i] = s2[j]
 j += 1;
 }
-     
+}
 return (p);
 }
