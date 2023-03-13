@@ -36,7 +36,7 @@ for (i = 0; i < total; i++)
 printf("i %d;", i);  
 if( i <= size1)
 {
-p[i] = s2[i]; 
+p[i] = s1[i]; 
 }
 else
 {
