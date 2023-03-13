@@ -31,6 +31,7 @@ if (p == NULL)
 return (NULL);
 for (i = 0; i < total; i++)
 {
+printf("i :%d\n", i);  
 if (i < size1)
 {
 p[i] = s1[i];
