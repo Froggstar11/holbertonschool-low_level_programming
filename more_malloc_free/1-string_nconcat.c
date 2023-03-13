@@ -38,8 +38,8 @@ p[i] = s1[i];
 }
 else if (i >= size1)
 {
-p[9] = s2[j];
-printf("entra %c %d\n",s2[j], j); 
+p[i] = s2[j];
+ printf("entra hay:%c %c %d\n",p[i], s2[j], j); 
 j += 1;
 }
 }
