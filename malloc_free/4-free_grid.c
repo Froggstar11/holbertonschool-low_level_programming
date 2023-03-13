@@ -22,8 +22,4 @@ grid[i] = NULL;
 free(grid);
 grid = NULL;
 }
-else
-{
-continue;
-}
 }
