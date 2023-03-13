@@ -15,7 +15,7 @@ int i;
 for (i = 0; grid[i] != NULL; i++)
 {
 free(grid[i]);
-free = NULL;
+grid[i] = NULL;
 }
 free(grid);
 grid = NULL;
