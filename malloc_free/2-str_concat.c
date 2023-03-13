@@ -14,7 +14,7 @@ char *str_concat(char *s1, char *s2)
 int size1 = strlen(s1);
 int size2 = strlen(s2);
 int total = size1 + size2;
- int i, j;
+int i, j = 0;
 char *p = (char *)malloc(sizeof(char) * total + 1);
 if (p == NULL)
 {
@@ -30,7 +30,7 @@ if (s2 == NULL)
 s2 = "";
 total = size2; 
 }
-for (i = 0; i < total - 2; i++)
+for (i = 0; i < total; i++)
 {
 if( i <= size1)
 {
