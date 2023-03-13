@@ -29,13 +29,13 @@ printf("total %d", total);
 p = (char *)malloc(total);
 if (p == NULL)
 return (NULL);
-for (i = 0; i < total - 1; i++)
+for (i = 0; i < total; i++)
 {
 if (i < size1)
 {
 p[i] = s1[i];
 }
-else
+else if (i >= size1)
 {
 p[i] = s2[j];
  printf("entra %c %d\n",s2[j], j); 
