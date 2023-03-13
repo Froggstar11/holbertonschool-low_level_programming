@@ -12,13 +12,10 @@
  */
 void *malloc_checked(unsigned int b)
 {
-  void *p = malloc(sizeof(int) * b);
-  if (p == NULL)
-    {
-      exist(98);
-    }
-  else
-    {
-      return (p);
-    }
+void *p = malloc(sizeof(int) * b);
+if (p == NULL)
+{
+exit(98);
+}
+return (p);
 }
