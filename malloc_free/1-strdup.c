@@ -14,7 +14,8 @@ char *_strdup(char *str)
 int size = strlen(str);
 int i;
 char *p = (char *)malloc(sizeof(char) * size + 1);
-if (p == NULL || str == '\0')
+printf("direeccion: %p\n", &str); 
+if (p == NULL)
 {
 return (NULL);
 }
