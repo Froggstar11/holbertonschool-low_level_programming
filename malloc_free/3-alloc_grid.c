@@ -5,7 +5,7 @@
 /**
  * alloc_grid - return a pointer to a 2 dimensional int array.
  * @width: an int.
- * @size: an int.
+ * @height: an int.
  *
  * Return: a double pointer of char type.
  */
@@ -17,13 +17,13 @@ return (NULL);
 }
 else
 {
-int **p =(int **)malloc(sizeof(int *) * width);
+int **p = (int **)malloc(sizeof(int *) * width);
 int i, j;
 if (p != NULL)
 {
 for (i = 0; i < width; i++)
 {
-*(p+i) = (int *)malloc(sizeof(int) * width);
+*(p + i) = (int *)malloc(sizeof(int) * width);
 }
 for (i = 0; i < height; i++)
 {
