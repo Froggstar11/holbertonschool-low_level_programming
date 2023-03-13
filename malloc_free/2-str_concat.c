@@ -11,6 +11,14 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+  if (s1 == NULL)
+    {
+      s1 = "";
+    }
+  if (s2 == NULL)
+    {
+      s2 = "";
+    }
 int size1 = strlen(s1);
 int size2 = strlen(s2);
 int total = size1 + size2;
@@ -20,16 +28,6 @@ char *p = (char *)malloc(sizeof(char) * total + 1);
 if (p == NULL)
 {
 return (NULL);
-}
-if (s1 == NULL)
-{
-s1 = "";
-total = size1; 
-}
-if (s2 == NULL)
-{
-s2 = "";
-total = size2; 
 }
 for (i = 0; i < total; i++)
 {  
