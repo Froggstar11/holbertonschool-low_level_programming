@@ -22,19 +22,21 @@ return (NULL);
 }
 if (s1 == NULL)
 {
-  s1 = "";
+s1 = "";
+total = size1; 
 }
 if (s2 == NULL)
 {
 s2 = "";
+total = size2; 
 }
 for (i = 0; i < total; i++)
 {
-if( i < size1)
+if( i <= size1)
 {
 p[i] = s1[i];
 }
-else if (i >= size1)
+else if (i > size1)
 {
 p[i] = s2[j];
 j++;
