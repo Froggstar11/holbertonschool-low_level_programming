@@ -5,7 +5,7 @@
 /**
  * _strdup - check code.
  * @str: a pointer of char type.
- * 
+ *
  *
  * Return:a pointer of char type.
  */
