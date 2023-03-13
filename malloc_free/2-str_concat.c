@@ -13,7 +13,10 @@ char *str_concat(char *s1, char *s2)
 {
 int size1;
 int size2;
-int total; 
+int total;
+ int i;
+ int j = 0;
+ char *p = NULL;
 if (s1 == NULL)
 size1 = 0;
 else
@@ -23,9 +26,7 @@ size2 = 0;
 else
 size2 = strlen(s2);  
 total = size1 + size2;
-int i;
-int j = 0;
-char *p = (char *)malloc(sizeof(char) * total + 1);
+p = (char *)malloc(sizeof(char) * total + 1);
 if (p == NULL)
 {
 return (NULL);
