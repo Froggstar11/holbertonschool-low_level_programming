@@ -25,6 +25,7 @@ size1 = 1;
 if (s2 == NULL)
 size2 = 1;
 total = size1 + n;
+printf("total %d", total);
 p = (char *)malloc(total);
 if (p == NULL)
 return (NULL);
