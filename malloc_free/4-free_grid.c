@@ -9,7 +9,7 @@
  *
  * Return: void.
  */
-void free_grid(int **grid,__attribute__ (unused) int height)
+void free_grid(int **grid,__attribute__((unused)) int height)
 {
 int i;
 for (i = 0; grid[i] != NULL; i++)
