@@ -40,8 +40,8 @@ j++;
 }
 else
 {
-p[i] = s2[j];
-j++;
+printf("entra");  
+p[i] = s1[i];
 }
 }
 return (p);
