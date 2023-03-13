@@ -18,13 +18,13 @@ unsigned int i;
 unsigned int j = 0;
 unsigned int total;
 char *p;
-if (n >= size2)
-n = size2;
+if (n > size2)
+size2 = n;
 if (s1 == NULL)
 size1 = 1;
 if (s2 == NULL)
 size2 = 1;
-total = size1 + n;
+total = size1 + size2;
 p = (char *)malloc(total);
 if (p == NULL)
 return (NULL);
