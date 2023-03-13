@@ -14,17 +14,17 @@ char *str_concat(char *s1, char *s2)
 int size1;
 int size2;
 int total;
- int i;
- int j = 0;
- char *p = NULL;
+int i;
+int j = 0;
+char *p = NULL;
 if (s1 == NULL)
 size1 = 0;
 else
-size1 = strlen(s1);  
+size1 = strlen(s1);
 if (s2 == NULL)
 size2 = 0;
 else
-size2 = strlen(s2);  
+size2 = strlen(s2);
 total = size1 + size2;
 p = (char *)malloc(sizeof(char) * total + 1);
 if (p == NULL)
@@ -32,15 +32,15 @@ if (p == NULL)
 return (NULL);
 }
 for (i = 0; i < total; i++)
-{  
-if( i < size1)
 {
-p[i] = s1[i]; 
+if (i < size1)
+{
+p[i] = s1[i];
 }
 else
-{  
+{
 p[i] = s2[j];
-j += 1; 
+j += 1;
 }
 }
 return (p);
