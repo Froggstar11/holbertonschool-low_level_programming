@@ -30,7 +30,7 @@ if (s2 == NULL)
 s2 = "";
 total = size2; 
 }
-for (i = 0; i < total - 1; i++)
+for (i = 0; i < total - 2; i++)
 {
 if( i <= size1)
 {
