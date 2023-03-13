@@ -34,7 +34,7 @@ if (i < size1)
 p[i] = s1[i];
 else
 {
-p[i] = s2[j];
+p[i] = s2[0];
 j += 1;
 }
 }
