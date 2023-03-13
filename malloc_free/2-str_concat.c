@@ -32,15 +32,13 @@ s2 = "";
 total = size2; 
 }
 for (i = 0; i < total; i++)
-{
-printf("i %d;", i);  
+{  
 if( i < size1)
 {
 p[i] = s1[i]; 
 }
 else
-{
-  printf("entra %d\n", j);  
+{  
 p[i] = s2[j];
 j += 1; 
 }
