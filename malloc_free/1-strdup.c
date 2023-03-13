@@ -13,7 +13,7 @@ char *_strduo(char *str)
 {
 int size = strlen(str);
 int i;
-char p* = (char *)malloc(sizeof(char) * size);
+char *p = (char *)malloc(sizeof(char) * size);
 if (p == NULL)
 {
 return (NULL);
@@ -24,6 +24,6 @@ for (i = 0; i < size; i++)
 {
 p[i] = str[i];
 }
-return (p);
 }
+return (p);
 }
