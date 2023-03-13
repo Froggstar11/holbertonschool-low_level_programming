@@ -24,7 +24,7 @@ if (s1 == NULL)
 size1 = 0;
 if (s2 == NULL)
 size2 = 0;
-total = size1 + n;
+total = size1 + n + 1;
 p = (char *)malloc(sizeof(char) * total);
 if (p == NULL)
 return (NULL);
