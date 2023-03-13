@@ -24,13 +24,13 @@ if (s1 == NULL)
 size1 = 1;
 if (s2 == NULL)
 size2 = 1;
-total = size1 + n + 1;
+total = size1 + n - 1;
 p = (char *)malloc(sizeof(char) * total);
 if (p == NULL)
 return (NULL);
 for (i = 0; i < size1; i++)
 p[i] = s1[i];
-for (; i < total - 1; i++)
+for (; i < total; i++)
 {
 p[i] = s2[j];
 j += 1;
