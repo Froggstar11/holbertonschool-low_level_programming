@@ -29,7 +29,7 @@ int **alloc_grid(int width, int height)
 		  p[i * height + j] = 0;
 		}
 	    }
-	  pp = p;
+	  pp = &p;
 	  return (pp);
 	}
       else
