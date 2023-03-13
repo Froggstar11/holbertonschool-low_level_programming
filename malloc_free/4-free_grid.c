@@ -11,6 +11,8 @@
  */
 void free_grid(int **grid,__attribute__((unused)) int height)
 {
+if (grid != NULL)
+{
 int i;
 for (i = 0; grid[i] != NULL; i++)
 {
@@ -19,4 +21,9 @@ grid[i] = NULL;
 }
 free(grid);
 grid = NULL;
+}
+else
+{
+printf("OK");  
+}
 }
