@@ -40,9 +40,9 @@ p[i] = s1[i];
 }
 else
 {
-printf("entra\n");  
-p[i] = s2[0];
-j++; 
+  printf("entra %d\n", j);  
+p[i] = s2[j];
+j += 1; 
 }
 }
 return (p);
