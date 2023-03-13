@@ -18,7 +18,7 @@ if (p == NULL)
 {
 return (NULL);
 }
-if (&str == NULL)
+if (*str == NULL)
 {
 return (NULL);
 }
