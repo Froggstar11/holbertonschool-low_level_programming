@@ -9,7 +9,7 @@
  *
  * Return:a pointer of char type.
  */
-char *_strduo(char *str)
+char *_strdup(char *str)
 {
 int size = strlen(str);
 int i;
