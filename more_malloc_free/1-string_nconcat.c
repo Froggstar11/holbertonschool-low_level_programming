@@ -37,8 +37,8 @@ p[i] = s1[i];
 }
 else
 {
-p[i] = s2[i-size1];
-printf("entra %d\n", j); 
+p[i] = s2[j];
+ printf("entra %c %d\n",s2[j], j); 
 j += 1;
 }
 }
