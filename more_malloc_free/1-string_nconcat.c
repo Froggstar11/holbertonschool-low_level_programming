@@ -31,7 +31,7 @@ return (NULL);
  i = 0;
  while (i < size1)
    {
-     p[i] = s1[i]
+     p[i] = s1[i];
        i += 1;
    }
  while (i < total)
