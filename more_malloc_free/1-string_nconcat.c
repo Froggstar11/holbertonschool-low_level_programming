@@ -41,6 +41,6 @@ j += 1;
 }
 }
  for(i = 0; i < total; i++)
-   printf("%c", p[i]);
+   printf("\n esto es: %c\n", p[i]);
 return (p);
 }
