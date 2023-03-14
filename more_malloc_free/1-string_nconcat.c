@@ -34,7 +34,7 @@ return (NULL);
      p[i] = s1[i];
        i += 1;
    }
- while (s2[i] != '\0')
+ while (s2[j] != '\0')
    {
      p[i] = s2[j];
      i += 1;
