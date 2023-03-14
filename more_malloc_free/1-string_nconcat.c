@@ -36,7 +36,7 @@ return (NULL);
    }
  while (s2[j] != '\0')
    {
-     if (i > n)
+     if (j > n)
        break;
      p[i] = s2[j];
      i += 1;
