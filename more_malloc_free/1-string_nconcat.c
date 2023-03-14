@@ -29,12 +29,12 @@ p = (char *)malloc(total);
 if (p == NULL)
 return (NULL);
  i = 0;
- while (p[i] != '\0')
+ while (s1[i] != '\0')
    {
      p[i] = s1[i];
        i += 1;
    }
- while (p[i] != '\0')
+ while (s2[i] != '\0')
    {
      p[i] = s2[j];
      i += 1;
