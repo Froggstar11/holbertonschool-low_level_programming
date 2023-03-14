@@ -30,7 +30,7 @@ if (p == NULL)
 return (NULL);
 for (i = 0; i < total; i++)
 {  
-if (i <= size1)
+if (i <= size1 && s1[i] != '\0')
 {
 p[i] = s1[i];
 }
