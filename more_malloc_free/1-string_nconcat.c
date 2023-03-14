@@ -17,7 +17,7 @@ unsigned int size2 = strlen(s2) + 1;
 unsigned int i;
 unsigned int j = 0;
 unsigned int total;
-char *p;
+char *p = NULL;
 if (n > size2)
 n = size2;
 if (s1 == NULL)
@@ -41,6 +41,6 @@ j += 1;
 }
 }
  for(i = 0; i < total; i++)
-   printf("%s", p[i]);
+   printf("%c", p[i]);
 return (p);
 }
