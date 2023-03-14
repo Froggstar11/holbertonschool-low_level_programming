@@ -25,23 +25,22 @@ size1 = 1;
 if (s2 == NULL)
 size2 = 1;
 total = size1 + n;
-printf("total %d", total);
 p = (char *)malloc(total);
 if (p == NULL)
 return (NULL);
 for (i = 0; i < total; i++)
-{
-printf("i :%d\n", i);  
-if (i < size1)
+{  
+if (i <= size1)
 {
 p[i] = s1[i];
 }
 else if (i > size1)
 {
-p[i] = s2[j];
- printf("entra hay:%c %c %d\n",p[i], s2[j], j); 
+p[i] = s2[j]; 
 j += 1;
 }
 }
+ for(i = 0; i < total; i++)
+   printf("%s", p[i]);
 return (p);
 }
