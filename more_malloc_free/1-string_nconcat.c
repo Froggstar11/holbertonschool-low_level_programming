@@ -28,18 +28,18 @@ total = size1 + n;
 p = (char *)malloc(total);
 if (p == NULL)
 return (NULL);
-for (i = 0; i < total; i++)
-{  
-if (i <= size1 && s1[i] != '\0')
-{
-p[i] = s1[i];
-}
-else if (i > size1)
-{
-p[i] = s2[j]; 
-j += 1;
-}
-}
+ i = 0;
+ while (i < size1)
+   {
+     p[i] = s1[i]
+       i += 1;
+   }
+ while (i < total)
+   {
+     p[i] = s2[j];
+     i += 1;
+     j += 1;
+   }
  for(i = 0; i < total; i++)
    printf("\n esto es: %c\n", p[i]);
 return (p);
