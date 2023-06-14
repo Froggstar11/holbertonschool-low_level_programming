@@ -4,7 +4,7 @@
 /**
  * main - entry point
  *
- * Return 0
+ * Return: 0
  **/
 
 /* betty style doc for function main goes there */
@@ -17,7 +17,7 @@ if (n > 0)
 printf("%d is positive\n", n);
 if (n == 0)
 printf("%d is zero\n", n);
-if(n < 0)
+if (n < 0)
 printf("%d is negative\n", n);
 /* your code goes there */
 return (0);
