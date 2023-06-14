@@ -17,10 +17,10 @@ int main(void)
 		last = last * -1;
 	printf("Last digit of %d is %d", n, last);
 	if (last > 5)
-		printf("and is greater then 5\n");
+		printf(" and is greater then 5\n");
 	if (last == 0)
-		printf("and is 0\n");
+		printf(" and is 0\n");
 	if (last < 6 && last != 0)
-		printf("and is less than 6 and not 0\n");
+		printf(" and is less than 6 and not 0\n");
 	return (0);
 }
