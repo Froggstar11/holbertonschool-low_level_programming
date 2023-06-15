@@ -11,4 +11,5 @@ int i;
 for (i = 97; i <= 122; i++)
 putchar(i + 'a');
 putchar('\n');
+return (0);
 }
