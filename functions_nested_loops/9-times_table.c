@@ -22,20 +22,20 @@ for (j = 0; j < 10; j++)
 result = i * j;
 firstDigit = result / 10;
 secondDigit = result % 10;
+if (j != 9 && result <= 9 && j != 0)
+{
+_putchar(44);
+_putchar(32);
+_putchar(32);
+}
+if (j != 9 && result > 9 j != 0)
+{
+_putchar(44);
+_putchar(32);
+}
 if (result > 9)
 _putchar(firstDigit + 48);
 _putchar(secondDigit + 48);
-if (j != 9 && result <= 9)
-{
-_putchar(44);
-_putchar(32);
-_putchar(32);
-}
-if (j != 9 && result > 9)
-{
-_putchar(44);
-_putchar(32);
-}
 }
 _putchar('\n');
 }
