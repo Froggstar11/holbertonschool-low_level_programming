@@ -4,9 +4,9 @@
 #include <time.h>
 #include "main.h"
 /**
- * _islower - checks if 
- *@c: an int.
- * Return: 1 if c is lowercase, 0 otherwise
+ * _islower - checks if c is lowercase.
+ * @c: an int.
+ * Return: 1 if c is lowercase, 0 otherwise.
  **/
 int _islower(int c)
 {
