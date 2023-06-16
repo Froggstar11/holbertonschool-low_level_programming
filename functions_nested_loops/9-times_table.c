@@ -11,7 +11,7 @@
 int time_table(void)
 {
 int i;
-int J;
+int j;
 int firstDigit = 0;
 int secondDigit = 0;
 int result = 0;
