@@ -28,7 +28,7 @@ _putchar(44);
 _putchar(32);
 _putchar(32);
 }
-if (j != 9 && result > 9 j != 0)
+if (j != 9 && result > 9 && j != 0)
 {
 _putchar(44);
 _putchar(32);
