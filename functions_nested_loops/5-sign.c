@@ -10,7 +10,7 @@
  * if n is less than 0.
  **/
 int print_sign(int n)
-}
+{
 if (n > 0)
 {  
 _putchar(45);
