@@ -22,13 +22,13 @@ for (j = 0; j < 10; j++)
 result = i * j;
 firstDigit = result / 10;
 secondDigit = result % 10;
-if (j != 9 && result <= 9 && j != 0)
+if (result <= 9 && j != 0)
 {
 _putchar(44);
 _putchar(32);
 _putchar(32);
 }
-if (j != 9 && result > 9 && j != 0)
+if (result > 9 && j != 0)
 {
 _putchar(44);
 _putchar(32);
