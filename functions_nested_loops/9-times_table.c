@@ -25,13 +25,13 @@ secondDigit = result % 10;
 if (result > 9)
 _putchar(firstDigit + 48);
 _putchar(secondDigit + 48);
-if (j != 9 && j <= 9)
+if (j != 9 && result <= 9)
 {
 _putchar(44);
 _putchar(32);
 _putchar(32);
 }
-if (j != 9 && j > 9)
+if (j != 9 && result > 9)
 {
 _putchar(44);
 _putchar(32);
