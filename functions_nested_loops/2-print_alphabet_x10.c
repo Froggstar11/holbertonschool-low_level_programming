@@ -4,9 +4,9 @@
 #include <time.h>
 #include "main.h"
 /**
- * main - imprimir
+ * print_alphabet_x10 - print the alphabet ten times
  *
- * Return: Always 0 (return)
+ * Return: void
  **/
 void print_alphabet_x10(void)
 {
