@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - prints the number folowed by a coma and space to reach 98.
+ * print_to_98 - prints the number folowed by a coma and space to reach 98.
  * @n: an int.
  * Return: void.
  **/
