@@ -2,13 +2,13 @@
 #include "main.h"
 /**
  * print_diagonal - print a diagonal
- *
+ * @n: an int.
  * Return: void.
  **/
 void print_diagonal(int n)
 {
 int i, j;
-int count = 1;
+int count = 0;
 if (n > 0)
 {
 for (i = 0; i < n; i++)
