@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _isupper - checks if c is uppercase.
+ * print_numbers - prints numbers from 0 to 9.
  *
  * Return: void.
  **/
