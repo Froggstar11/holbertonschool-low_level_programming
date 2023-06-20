@@ -15,8 +15,7 @@ for (j = 0; j < 14; j++)
 {
 _putchar((j / 10) + 48);
 if (j > 9) 
-_putchar((j % 10) + 48);
-_putchar('\n'); 
+_putchar((j % 10) + 48); 
 }
 }
 _putchar('\n');
