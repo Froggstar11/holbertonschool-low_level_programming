@@ -17,6 +17,6 @@ _putchar((j / 10) + 48);
 if (j > 9) 
 _putchar((j % 10) + 48); 
 }
+_putchar('\n'); 
 }
-_putchar('\n');
 }
