@@ -9,8 +9,8 @@ void print_triangle(int size)
 {
 int i;
 int j;
-int cont = size - 1;
-if (size < 0)
+int cont = size;
+if (size <= 0)
 _putchar('\n');
 else
 {
