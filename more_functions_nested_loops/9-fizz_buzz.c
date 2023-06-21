@@ -4,9 +4,9 @@
  * main - prints from 1 to 100, but for multiples of three print Fizz,
  * multiples of five pront Buzz and both multiples prints FizzBuzz.
  *
- * Return: void.
+ * Return: 0.
  **/
-void main(void)
+int main(void)
 {
 int i;
 for (i = 0; i < 100; i++)
@@ -21,4 +21,5 @@ else
 printf("%i", i);
 }
 printf("\n");
+return (0);
 }
