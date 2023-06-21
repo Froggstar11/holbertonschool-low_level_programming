@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * fizz_buzz - prints from 1 to 100, but for multiples of three print Fizz,
+ * main - prints from 1 to 100, but for multiples of three print Fizz,
  * multiples of five pront Buzz and both multiples prints FizzBuzz.
  *
  * Return: void.
  **/
-void fizz_buzz(void)
+void main(void)
 {
 int i;
 for (i = 0; i < 100; i++)
