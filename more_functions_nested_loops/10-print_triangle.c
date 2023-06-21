@@ -23,7 +23,7 @@ if (j >= cont)
 _putchar(35);
 }
 else
-_putchar(32); 
+_putchar(32);
 }
 cont--;
 _putchar('\n');
