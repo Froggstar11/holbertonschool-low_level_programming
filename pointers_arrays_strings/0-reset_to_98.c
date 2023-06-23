@@ -1,0 +1,12 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * reset_to98 - reset to 98. 
+ * @n: int.
+ * Return: void.
+ */
+void reset_to_98(int *n)
+{
+  *n = 98;
+}
