@@ -12,7 +12,7 @@ int i;
 char aux[20];
 int count = 0;
 int size = strlen(s);
-for (i = size; i >= 0; i++)
+for (i = size - 1; i >= 0; i++)
 {
   aux[count] = s[i];
   count++;
