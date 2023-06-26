@@ -17,6 +17,6 @@ for (i = size - 1; i >= 0; i--)
   aux[count] = s[i];
   count++;
 }
-*s = *aux;
+s = aux;
 }
    
