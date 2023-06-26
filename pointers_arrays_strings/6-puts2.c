@@ -11,9 +11,9 @@ int i;
 int count = 0;
 for (i = 0; str[i] != '\0'; i++)
 {
-if (count % 2 == 0) 
+if (count % 2 == 0)
 _putchar(str[i]);
-count++; 
+count++;
 }
 _putchar('\n');
 }
