@@ -13,6 +13,7 @@ for (i = 0; str[i] != '\0'; i++)
 {
 if (count % 2 == 0) 
 _putchar(str[i]);
+count++; 
 }
 _putchar('\n');
 }
