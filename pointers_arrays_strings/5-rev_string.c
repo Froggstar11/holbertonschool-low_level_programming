@@ -9,6 +9,7 @@
 void rev_string(char *s)
 {
 int i;
+int count = 0;
 int size = strlen(s);
 char change;
 char aux[];
