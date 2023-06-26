@@ -14,9 +14,12 @@ int count = 0;
 int size = strlen(s);
 for (i = size - 1; i >= 0; i--)
 {
-  aux[count] = s[i];
-  count++;
+aux[count] = s[i];
+count++;
 }
-s = aux;
+for (i = 0; aux[i] != '\0'; i++)
+{
+s[i] = aux[i];
+}
 }
    
