@@ -8,8 +8,8 @@
 void puts_half(char *str)
 {
 int i;
-int size = strlen(str) - 1;
-for (i = size / 2 - 1; i <= size; i++)
+int size = strlen(str);
+for (i = size / 2; i <= size; i++)
 {
 _putchar(str[i]);
 }
