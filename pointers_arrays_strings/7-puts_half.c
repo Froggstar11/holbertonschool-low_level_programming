@@ -11,7 +11,7 @@ int i;
 int size = strlen(str);
 for (i = size - 1 / 2; str[i] != '\0'; i++)
 {
-_putchar(s[i]);      
+_putchar(str[i]);      
 }
 _putchar('\0');
 }
