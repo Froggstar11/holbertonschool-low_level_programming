@@ -29,6 +29,7 @@ if (digitTrue == 1)
 break;
 }
 i++;
+}
 number *= min;
 return (number);
 }
