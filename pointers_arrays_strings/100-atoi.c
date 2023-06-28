@@ -21,7 +21,7 @@ min *= -1;
 while (s[i] >= 48 && s[i] <= 57)
 {
 digitTrue = 1;
-number = (number * 10) + (s[i] + 48);
+number = (number * 10) + (s[i] + '0');
 i++;
 }
 if (digitTrue == 1)
