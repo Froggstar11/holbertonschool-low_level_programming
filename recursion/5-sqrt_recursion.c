@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _sqrt - check the code
  *
  * Return: Always 0.
  */
 int _sqrt(int y, int n)
 {
-int nextNumber = (y + n/y) / 2;
+unsigned long nextNumber = (y + n/y) / 2;
 if (y*y <= n && (y+1)*(y+1) > n)
 return y;
 else
@@ -18,5 +18,5 @@ int _sqrt_recursion(int n)
 {
 if (n < 0)
 return (-1);  
-return _sqrt(1, n/2);
+return _sqrt(1, n);
 }
