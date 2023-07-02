@@ -10,7 +10,7 @@ int _sqrt(int y, int n)
 {
   int i = n * n;
   if (i == y)
-      return (i);
+      return (n);
   else if (i < y)
     return (_sqrt(y , (n + 1)));
   return (-1);
