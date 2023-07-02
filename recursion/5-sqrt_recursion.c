@@ -13,7 +13,7 @@ int i = n * n;
 if (i == y)
 return (n);
 else if (i < y)
-return (_sqrt(y , (n + 1)));
+return (_sqrt(y, (n + 1)));
 return (-1);
 }
 /**
@@ -22,6 +22,6 @@ return (-1);
  * Return: an int.
  */
 int _sqrt_recursion(int n)
-{  
-return _sqrt(n, 1);
+{
+return (_sqrt(n, 1));
 }
