@@ -2,20 +2,19 @@
 #include <stdio.h>
 
 /**
- * _sqrt - check the code
+ * main - check the code
  *
  * Return: Always 0.
  */
 int _sqrt(int y, int n)
 {
-  int i = n * n;
-  if (i == y)
-      return (i);
-  else if (i < y)
-    return (_sqrt(y , (n + 1)));
-  return (-1);
+int nextNumber = (y + n/y) / 2;
+if (y*y <= n && (y+1)*(y+1) > n)
+return y;
+else
+return _sqrt(nextNumber, n);
 }
 int _sqrt_recursion(int n)
-{  
+{
 return _sqrt(1, n);
 }
