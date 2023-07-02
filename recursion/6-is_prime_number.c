@@ -5,7 +5,7 @@
 /**
  * find_prime - checks if the number is a prime.
  * @n: an int.
- * @n: an int.
+ * @y: an int.
  * Return: an int.
  */
 int find_prime(int n, int y)
