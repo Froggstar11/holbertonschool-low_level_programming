@@ -20,7 +20,7 @@ else
 {
 first = atoi(argv[1]);
 second = atoi(argv[2]);
-printf("%i\n", _mul(first, second));
+printf("%i\n", (atoi(argv[1]) * atoi(argv[2])) / 1);
 }
 return (0);
 }
