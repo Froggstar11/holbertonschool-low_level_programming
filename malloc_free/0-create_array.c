@@ -2,8 +2,9 @@
 #include <stdlib.h>
 
 /**
- * main - check the code
- *
+ * create_array - create an array and initializes it with a specific char
+ * @size: an int.
+ * @c: an int.
  * Return: Always 0.
  */
 char *create_array(unsigned int size, char c)
@@ -13,6 +14,6 @@ int i;
 if (p == NULL)
 return (0);
 for (i = 0; i < size; i++)
-p[i] = c;   
+p[i] = c;
 return (p);
 }
