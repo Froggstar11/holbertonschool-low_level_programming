@@ -15,7 +15,7 @@ char *p = NULL;
 if (str == NULL)
 return (NULL);
 size = strlen(str);
-p = (char *)malloc(sizeof(char) * size);
+p = (char *)malloc(sizeof(char) * size + 1);
 if (p == NULL)
 return (NULL);
 for (i = 0; i < size; i++)
