@@ -16,7 +16,7 @@ if (str == NULL)
 return (NULL);
 if (p == NULL)
 return (NULL);
-size = strlen(str) + 1;
+size = strlen(str);
 p = (char *)malloc(sizeof(char) * size);
 for (i = 0; i < size; i++)
 {
