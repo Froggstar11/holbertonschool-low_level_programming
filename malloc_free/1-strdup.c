@@ -17,7 +17,7 @@ return (NULL);
 if (p == NULL)
 return (NULL);
 size = strlen(str);
-p = (char *)malloc(sizeof(char) * size);
+p = (char *)malloc(sizeof(char) * size + 1);
 for (i = 0; i < size; i++)
 {
 p[i] = str[i];
