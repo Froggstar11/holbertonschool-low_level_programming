@@ -14,10 +14,10 @@ int i;
 char *p = NULL;
 if (str == NULL)
 return (NULL);
+size = strlen(str);
+p = (char *)malloc(sizeof(char) * size);
 if (p == NULL)
 return (NULL);
-size = strlen(str);
-p = (char *)malloc(sizeof(char) * size + 1);
 for (i = 0; i < size; i++)
 {
 p[i] = str[i];
