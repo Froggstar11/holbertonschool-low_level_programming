@@ -24,7 +24,7 @@ return (0);
        {
 	 if (p[i] == NULL)
 	   {
-	     for (z = 0; z < j; z++)
+	     for (z = 0; z <= i; z++)
 	       free(p[z]);
 	     free(p);
 	   return (NULL);
