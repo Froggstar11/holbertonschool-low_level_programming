@@ -19,12 +19,12 @@ if (p == NULL)
 return (0);
  for (i = 0; i < height; i++)
    {
+     p[i] = (int *)malloc(sizeof(int) * width);   
      for (j = 0; j < width; j++)
        {
-	 p[i] = (int *)malloc(sizeof(int) * width);
 	 if (p[i] == NULL)
 	   {
-	     for (z = 0; z < i; z++)
+	     for (z = 0; z < j; z++)
 	       free(p[z]);
 	     free(p);
 	   return (NULL);
