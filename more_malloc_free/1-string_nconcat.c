@@ -25,7 +25,7 @@ size2 = strlen(s2);
 if (n >= size2)
 total = size1 + size2;
 else
-total = size1 + n; 
+total = size1 + n;
 p = malloc(sizeof(char) * total + 1);
 if (p == NULL)
 return (NULL);
