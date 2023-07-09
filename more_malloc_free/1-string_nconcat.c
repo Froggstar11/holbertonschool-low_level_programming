@@ -6,8 +6,8 @@
  * string_nconcat - concatenates two strings.
  * @s1: a pointer of char type.
  * @s2: a pointer of char type.
- * @n> an unsigned int.
- * Return: a pointer of char type..
+ * @n: an unsigned int.
+ * Return: a pointer of char type.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -17,8 +17,10 @@ unsigned int total;
 unsigned int second;
 char *p = NULL;
 unsigned int i, j = 0;
-if (s1 == NULL || s2 == NULL)
-return (NULL);
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
 size1 = strlen(s1);
 size2 = strlen(s2);
 if (n >= size2)
