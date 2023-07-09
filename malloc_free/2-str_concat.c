@@ -16,7 +16,7 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-size = strlen(s1); 
+size = strlen(s1);
 sizeTotal = strlen(s1) + strlen(s2) + 1;
 p = (char *)malloc(sizeof(char) * sizeTotal);
 if (p == NULL)
@@ -26,9 +26,9 @@ for (i = 0; i < sizeTotal; i++)
 if (i < size)
 p[i] = s1[i];
 else
-{   
+{
 p[i] = s2[count];
-count++; 
+count++;
 }
 }
 p[i] = '\0';
