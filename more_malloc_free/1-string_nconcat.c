@@ -14,6 +14,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 unsigned int size1;
 unsigned int size2;
 unsigned int total;
+unsigned int second;
 char *p = NULL;
 unsigned int i, j = 0;
 if (s1 == NULL || s2 == NULL)
@@ -21,8 +22,10 @@ return (NULL);
 size1 = strlen(s1);
 size2 = strlen(s2);
 if (n >= size2)
-n = size2;
-total = size1 + n;
+second = size2;
+else
+second = n; 
+total = size1 + second + 1;
 p = malloc(sizeof(char) * total);
 if (p == NULL)
 return (NULL);
