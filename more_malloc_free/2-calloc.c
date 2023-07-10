@@ -14,7 +14,7 @@ int *p = NULL;
  unsigned int i, total;
 if (nmemb == 0 || size == 0)
 return (NULL);
-total = nmemb * size); 
+total = nmemb * size; 
 p = malloc(total);
 if (p == NULL)
 return (NULL);
