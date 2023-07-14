@@ -6,7 +6,7 @@
  * @d: a pointer od dog struct.
  * @name: a pointer of char.
  * @age: a float.
- * @owner: a pointer of char type. 
+ * @owner: a pointer of char type.
  * Return: void.
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
