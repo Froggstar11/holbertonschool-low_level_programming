@@ -15,12 +15,12 @@ dog_t *p = NULL;
 int sizeName = 0;
 int sizeOwner = 0;
 p = (dog_t *)malloc(sizeof(dog_t));
-if(p == NULL)
+if (p == NULL)
 return (NULL);
 if (name == NULL || owner == NULL)
 {
 free(p);
-return(NULL);
+return (NULL);
 }
 sizeName = strlen(name) + 1;
 sizeOwner = strlen(owner) + 1;
@@ -36,7 +36,7 @@ if (p->owner == NULL)
 {
 free(p->name);
 free(p);
-return(NULL);
+return (NULL);
 }
 strcpy(p->owner, owner);
 p->age = age;
