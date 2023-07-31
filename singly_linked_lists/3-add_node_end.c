@@ -6,7 +6,7 @@
 /**
  * add_node_end - adds a new node at the en of a list_t.
  * @head: a pointer of struct type.
- * @str a string.
+ * @str: a string.
  * Return: the address of the new element, or NULL if it failed.
  */
 list_t *add_node_end(list_t **head, const char *str)
@@ -24,8 +24,8 @@ if (*head == NULL)
 *head = lastNode;
 return (lastNode);
 }
-position = *head; 
-for (;position->next != NULL;)
+position = *head;
+for (; position->next != NULL; )
 position = position->next;
 position->next = lastNode;
 return (position);
