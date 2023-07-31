@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * sum_dlistint - returns the sum of all the data (n) of a dlistint_t linked list
+ * sum_dlistint - sum of all the data (n) of a dlistint_t linked list
  * @head: a pointer to a dobulelist node.
  * Return: an int.
  */
