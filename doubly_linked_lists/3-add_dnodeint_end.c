@@ -36,5 +36,5 @@ newNode->next = NULL;
 *head = newNode;
 return (newNode);
 }
-return (newNode);
+return (position);
 }
