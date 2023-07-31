@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - adds a new node at the beginning of a double list.
+ * get_dnodeint_at_index - returns the nth node of a dlistint_t linked list.
  * @head: an array of pointers to a dobulelist node.
  * @index: index of the node.
  * Return: the address of the new element.
@@ -23,5 +23,5 @@ else
 return (NULL);
 count++;
 }
-return(position);
+return (position);
 }
