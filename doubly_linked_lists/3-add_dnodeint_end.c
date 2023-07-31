@@ -34,7 +34,7 @@ else
 newNode->prev = NULL;
 newNode->next = NULL;
 *head = newNode;
-return (last);
+return (newNode);
 }
 return (newNode);
 }
