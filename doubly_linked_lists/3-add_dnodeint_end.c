@@ -21,7 +21,7 @@ if (*head != NULL)
 {
 while (position->next != NULL)
 {
-position->next = newNode;
+position = position->next;
 }
 position->next = newNode;
 newNode->prev = position;
