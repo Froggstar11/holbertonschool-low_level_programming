@@ -17,7 +17,7 @@ for (; position->next != NULL; )
 {
 head = head->next;
 free(position);
-position = position->next,
+position = position->next;
 }
 free(position);
 }
