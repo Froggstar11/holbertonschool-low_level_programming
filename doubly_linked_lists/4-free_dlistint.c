@@ -11,8 +11,8 @@
 void free_dlistint(dlistint_t *head)
 {
 dlistint_t *position = head;
-if (head == NULL)
-free(head);
+if (head != NULL)
+{
 for (; position->next != NULL; )
 {
 head = head->next;
@@ -20,4 +20,5 @@ free(position);
 position = position->next;
 }
 free(position);
+}
 }
