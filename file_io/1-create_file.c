@@ -6,7 +6,7 @@
 #include <unistd.h>
 
 /**
- * creats_file - creats a file.
+ * create_file - create a file.
  * @filename: a pointer of char type.
  * @text_content: a pointer of char type.
  * Return: 1 on succes, -1 on failure.
@@ -25,5 +25,5 @@ writeFile = write(openFile, text_content, size);
 if (writeFile == -1)
 return (-1);
 close(openFile);
-return(1);
+return (1);
 }
