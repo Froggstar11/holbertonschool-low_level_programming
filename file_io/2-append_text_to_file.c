@@ -19,7 +19,7 @@ return (-1);
 openFile = open(filename, O_RDWR | O_APPEND, 0600);
 if (openFile == -1)
 return (-1);
-if (test_content != NULL)
+if (text_content != NULL)
 size = strlen(text_content);
 writeFile = write(openFile, text_content, size);
 if (writeFile == -1)
