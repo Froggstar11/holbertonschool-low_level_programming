@@ -25,7 +25,7 @@ return (0);
 readFile = read(openFile, auxiliar, letters);
 if (readFile == -1)
 return (0);
-writeFile = write(STDOUT_FILENO, auxiliar, readFile)
+writeFile = write(STDOUT_FILENO, auxiliar, readFile);
 if (writeFile == -1)
 return (0);
 free(auxiliar);
