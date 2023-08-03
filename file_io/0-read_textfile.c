@@ -5,10 +5,10 @@
 #include <fcntl.h>
 
 /**
- * read_textfile - reads a text file and prints it to hre POSIX standard output.
+ * read_textfile - reads a text file and prints it to hre POSIX standard output
  * @filename: a pointer of char type.
  * @letters: a size_t.
- * Returns: the actual number of letters it could read and print.
+ * Return: the actual number of letters it could read and print.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
