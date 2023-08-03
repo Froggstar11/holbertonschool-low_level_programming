@@ -1,6 +1,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 #include <sys/types.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -32,8 +33,8 @@ int main(int argc, char *argv[])
       dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
       exit(98);
     }
-  read = read(from, auxiliar, 1024);
-  if (read == -1)
+  readf = read(from, auxiliar, 1024);
+  if (readf == -1)
     {
       dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
       exit(98);
