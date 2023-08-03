@@ -13,9 +13,9 @@ hash_table_t *hash_table_create(unsigned long int size)
 unsigned long int i = 0;
 hash_table_t *newTable = NULL;
 newTable = (hash_table_t *)malloc(sizeof(hash_table_t));
-if (newTable == NULL);
+if (newTable == NULL)
 return (NULL);
-newTable->array = (hash_table_t *)malloc(sizeof(hash_table_t *) * size);
+newTable->array = malloc(sizeof(hash_table_t *) * size);
 if (newTable->array == NULL)
 return (NULL);
 while (i < size)
