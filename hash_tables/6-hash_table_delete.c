@@ -12,7 +12,7 @@ void hash_table_delete(hash_table_t *ht)
 {
 hash_node_t *auxiliar = NULL, *position = NULL;
 unsigned long int i = 0;
-if (nt != NULL)
+if (ht != NULL)
 {
 for (i = 0; i < ht->size; i++)
 {
