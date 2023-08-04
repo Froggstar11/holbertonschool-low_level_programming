@@ -17,7 +17,7 @@ if (ht != NULL)
 printf("{");
 for (i = 0; i < ht->size; i++)
 {
-auxiliar = ht->attay[i];
+auxiliar = ht->array[i];
 for (; auxiliar != NULL; )
 {
 if (boolean == 1)
