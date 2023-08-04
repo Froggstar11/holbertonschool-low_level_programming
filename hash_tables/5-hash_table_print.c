@@ -10,7 +10,7 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-int i, boolean = 1;
+unsigned long int i, boolean = 1;
 hash_node_t *auxiliar = NULL;
 if (ht != NULL)
 {
@@ -20,7 +20,7 @@ for (i = 0; i < ht->size; i++)
 auxiliar = ht->attay[i];
 for (; auxiliar != NULL; )
 {
-if (boolena == 1)
+if (boolean == 1)
 boolean = 0;
 else
 printf(", ");
