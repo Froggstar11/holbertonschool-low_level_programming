@@ -28,6 +28,6 @@ printf("'%s': '%s'", auxiliar->key, auxiliar->value);
 auxiliar = auxiliar->next;
 }
 }
-}
 printf("}\n");
+}
 }
