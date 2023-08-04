@@ -16,7 +16,7 @@ unsigned long int index;
 hash_node_t *auxiliar = NULL, *addNode = NULL;
 if (ht == NULL || key == NULL)
 return (0);
-index = key_index((const unsigned char *)key, ht->size));
+index = key_index((const unsigned char *)key, ht->size);
 auxiliar = ht->array[index];
 for (; auxiliar != NULL; )
 {
@@ -33,7 +33,7 @@ if (addNode == NULL)
 return (0);
 addNode->key = strdup(key);
 addNode->value = strdup(value);
-newNode->next = *head;
-*head = newNode;
+addNode->next = *head;
+*head = addNode;
 return (1);
 }
