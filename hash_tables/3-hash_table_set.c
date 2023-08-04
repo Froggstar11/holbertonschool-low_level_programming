@@ -29,7 +29,7 @@ return (1);
 }
 auxiliar = auxiliar->next;
 }
-head = &ht->array[index]; 
+head = &ht->array[index];
 addNode = malloc(sizeof(hash_node_t));
 if (addNode == NULL)
 return (0);
