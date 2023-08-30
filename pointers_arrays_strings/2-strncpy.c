@@ -11,24 +11,12 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-int size1 = strlen(dest);
-int size2 = strlen(src);
-int i, count = 0;
-char *p = NULL;
-if (n >= size2)
-n = size2;
-p = malloc(sizeof(char) * (size1 + n)); 
-for (i = 0; i < size1; i++)
+int i;
+for (i = 0; i < n && src[i] != '\0'; i++)
 {
-p[i] = dest[count];
-count++;
+dest[i] = src[i];
 }
-count = 0;
-for (; i < size1 + n; i++)
-{
-p[i] = src[count];
-count++;
-}
-p[i] = '\0';
-return (p);
+for (; i < n; i++) 
+dest[i] = '\0';
+return (dest);
 }
