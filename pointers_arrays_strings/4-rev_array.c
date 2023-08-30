@@ -16,7 +16,7 @@ for (i = 0; i < n / 2; i++)
 {
 aux = a[i];
 a[i] = a[count];
-a[count] = aux; 
+a[count] = aux;
 count--;
 }
 }
