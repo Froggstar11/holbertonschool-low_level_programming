@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * _strcat - concatenates two strings.
+ * _strncat - concatenates two strings.
  * @dest: a pointer of char type.
  * @src: a pointer of char type.
  * @n: an int.
@@ -12,7 +12,10 @@
 char *_strncat(char *dest, char *src, int n)
 {
 int size1 = strlen(dest);
+int size2 = strlen(src); 
 int i, count = 0;
+if (n >= size2)
+n = size2;
 for (i = size1; i < size1 + n; i++)
 {
 dest[i] = src[count];
