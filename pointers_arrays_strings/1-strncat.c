@@ -12,7 +12,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 int size1 = strlen(dest);
-int size2 = strlen(src); 
+int size2 = strlen(src);
 int i, count = 0;
 if (n >= size2)
 n = size2;
