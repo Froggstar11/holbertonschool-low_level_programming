@@ -10,22 +10,14 @@
  */
 char *_strcat(char *dest, char *src)
 {
-int size1 = strlen(dest);
+int size1 = strlen(dest) + 1;  
 int size2 = strlen(src);
-char *p = malloc(sizeof(char) + (size1 + size2 + 1));
-int i, count = 0, count2 = 0; 
-if (p == NULL)
-return (NULL);
-for (i = 0; i < size1; i++)
+int i, count = 0; 
+for (i = size1; i < size2; i++)
 {
-p[i] = dest[count];
+dest[i] = src[count];
 count++;
 }
-for (; i < size2; i++)
-{
-p[i] = src[i];
-count2++;    
-}
-p[i] = '\0';
-return (p); 
+dest[i] = '\0';
+return (dest); 
 }
