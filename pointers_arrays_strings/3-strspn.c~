@@ -1,0 +1,29 @@
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+/**
+ * _strchr - locates a character in a string.
+ * @s: a pointer of char type.
+ * @c: a char.
+ *
+ * Return: a pointer of char type.
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+  unsigned int i, j, count = 0, check = 1;
+  for (i = 0; s[i] != '\0' && check != 2; i++)
+    {
+      for (j = 0; accept[j] != '\0'; j++)
+	{
+	  if(accept[j] == s[i])
+	    {
+	    count++;
+	    check = 0;
+	    break;
+	    }
+	  else if (accept[j] != s[i])
+	    check = 2;
+	}
+    }
+  return (count);
+}
