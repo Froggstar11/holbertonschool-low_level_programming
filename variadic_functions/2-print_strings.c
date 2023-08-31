@@ -11,14 +11,14 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
-va_list list; 
+va_list list;
 char *s = NULL;
 va_start(list, n);
 for (i = 0; i < n; i++)
 {
 s = va_arg(list, char *);
-printf("%s", (s == NULL) ? "nil)" : s);
-if (i != n - 1)
+printf("%s", (s == NULL) ? "(nil)" : s);
+if (i != n - 1 && separators != NULL)
 printf("%s", separator);
 }
 va_end(list);
