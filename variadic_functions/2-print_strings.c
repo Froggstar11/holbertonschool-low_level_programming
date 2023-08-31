@@ -17,7 +17,7 @@ va_start(list, n);
 for (i = 0; i < n; i++)
 {
 s = va_arg(list, char *);
-printf("%s", (s == NULL) ? "(nil)" : s);
+printf("%s", (s == NULL) ? "nil)" : s);
 if (i != n - 1)
 printf("%s", separator);
 }
