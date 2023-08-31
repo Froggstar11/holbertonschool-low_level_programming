@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _strchr - gets the length of a prefix substring.
+ * _strspn - gets the length of a prefix substring.
  * @s: a pointer of char type.
  * @accept: a pointer of char type.
  *
@@ -15,7 +15,7 @@ for (i = 0; s[i] != '\0' && check != 2; i++)
 {
 for (j = 0; accept[j] != '\0'; j++)
 {
-if(accept[j] == s[i])
+if (accept[j] == s[i])
 {
 count++;
 check = 0;
