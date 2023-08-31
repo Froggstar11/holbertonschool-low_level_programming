@@ -3,7 +3,7 @@
 #include <stdarg.h>
 #include <string.h>
 /**
- * print_number - prints strings, followed by a new line.
+ * print_numbers - prints strings, followed by a new line.
  * @n: an int
  * @separator: a pointer of char type.
  * Return: void.
@@ -18,9 +18,9 @@ for (i = 0; i < n; i++)
 {
 s = va_arg(list, char *);
 printf("%s", (s == NULL) ? "(nil)" : s);
-if (i != n - 1 && separator != NULL)
+if (i != n - 1)
 printf("%s", separator);
 }
 va_end(list);
-  printf("\n");
+printf("\n");
 }
