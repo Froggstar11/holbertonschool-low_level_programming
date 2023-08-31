@@ -3,7 +3,7 @@
 #include <stdarg.h>
 #include <string.h>
 /**
- * print_numbers - prints strings, followed by a new line.
+ * print_strings - prints strings, followed by a new line.
  * @n: an int
  * @separator: a pointer of char type.
  * Return: void.
